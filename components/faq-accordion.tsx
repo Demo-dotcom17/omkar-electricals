@@ -16,7 +16,7 @@ export function FAQAccordion({ items }: FAQAccordionProps) {
   const [openIndex, setOpenIndex] = useState<number | null>(null)
 
   return (
-    <div className="space-y-4">
+    <div className="space-y-4" style={{ fontFamily: '"Inter", sans-serif' }}>
       {items.map((item, index) => (
         <div
           key={index}
@@ -26,7 +26,7 @@ export function FAQAccordion({ items }: FAQAccordionProps) {
             onClick={() => setOpenIndex(openIndex === index ? null : index)}
             className="w-full px-6 py-4 flex items-center justify-between text-left hover:bg-gray-50 transition"
           >
-            <span className="text-base font-semibold text-foreground font-geist">{item.question}</span>
+            <span className="text-base font-medium text-foreground font-geist">{item.question}</span>
             <ChevronDown
               size={20}
               className={`flex-shrink-0 text-accent transition-transform ${
