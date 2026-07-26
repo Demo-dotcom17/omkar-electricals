@@ -8,7 +8,7 @@ import { Footer } from '@/components/footer'
 export default function Home() {
   const handleBrochureDownload = async () => {
     try {
-      const response = await fetch('https://blobs.vusercontent.net/blob/Omkar%20Electricals%20Brochure_compressed-dAbswxQUlz4XCuR8RahBpfp7IddDlf.pdf')
+      const response = await fetch('https://blobs.vusercontent.net/blob/Omkar%20Electricals%20Brochure1_compressed-pLpry6tyhAYN0R7b5XYU7TTscEdytl.pdf')
       const blob = await response.blob()
       const url = window.URL.createObjectURL(blob)
       const a = document.createElement('a')
