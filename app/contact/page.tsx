@@ -3,6 +3,66 @@
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { MapPin } from 'lucide-react'
+import { FAQAccordion } from '@/components/faq-accordion'
+
+const faqItems = [
+  {
+    question: 'What services does Omkar Electricals provide?',
+    answer: 'We provide residential, commercial, industrial, institutional, banking, and government electrical contracting services, including wiring, panel installation, cable laying, maintenance, testing, inspections, and turnkey electrical projects.',
+  },
+  {
+    question: 'Are you a government licensed electrical contractor?',
+    answer: 'Yes. Omkar Electricals is a government-licensed electrical contracting company in Maharashtra, delivering reliable electrical solutions since 2001.',
+  },
+  {
+    question: 'What is the difference between an electrician and an electrical contractor?',
+    answer: 'An electrician performs electrical installation and repair work, while an electrical contractor is a licensed professional responsible for planning, managing, supervising, and executing complete electrical projects in compliance with government regulations.',
+  },
+  {
+    question: 'Which areas do you serve?',
+    answer: 'We primarily serve Kolhapur, Pune, Mumbai, and other locations across Maharashtra based on project requirements.',
+  },
+  {
+    question: 'Do you handle residential electrical work?',
+    answer: 'Yes. We undertake complete residential electrical solutions including wiring, rewiring, panel installation, lighting, maintenance, and safety inspections.',
+  },
+  {
+    question: 'Do you undertake commercial and industrial projects?',
+    answer: 'Yes. We specialize in commercial buildings, industries, banks, educational institutions, hospitals, and government projects.',
+  },
+  {
+    question: 'Do you provide turnkey electrical solutions?',
+    answer: 'Yes. We manage complete turnkey projects from planning and design to installation, testing, commissioning, and maintenance.',
+  },
+  {
+    question: 'Can you upgrade old electrical systems?',
+    answer: 'Yes. We upgrade outdated electrical systems to improve safety, efficiency, and compliance with current electrical standards.',
+  },
+  {
+    question: 'Do you provide emergency electrical services?',
+    answer: 'Yes. Our team offers prompt emergency support to resolve electrical faults and minimize downtime.',
+  },
+  {
+    question: 'Do you offer electrical inspections and safety audits?',
+    answer: 'Yes. We conduct electrical inspections, safety audits, compliance checks, and testing to ensure your electrical systems operate safely and efficiently.',
+  },
+  {
+    question: 'Can I request a quotation before starting a project?',
+    answer: 'Absolutely. We provide free consultations and quotations based on your project requirements.',
+  },
+  {
+    question: 'How can I contact Omkar Electricals?',
+    answer: 'You can contact us through the Contact page, call us directly, send a WhatsApp message, or visit our office in Kolhapur.',
+  },
+  {
+    question: 'Do you provide apprenticeship opportunities?',
+    answer: 'Yes. We offer apprenticeship programs where candidates receive practical site experience under experienced professionals and receive an experience letter after successful completion.',
+  },
+  {
+    question: 'How can I apply for a job at Omkar Electricals?',
+    answer: 'Visit our Careers page to explore current openings or contact us directly with your resume.',
+  },
+]
 
 export default function Contact() {
 
@@ -87,6 +147,23 @@ export default function Contact() {
               >
                 OPEN IN GOOGLE MAPS
               </a>
+            </div>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className="px-4 bg-background" style={{ paddingTop: '66px', paddingBottom: '96px' }}>
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-semibold mb-4 font-geist" style={{ color: '#ff8c00' }}>
+                Frequently Asked Questions
+              </h2>
+              <p className="text-gray-600 text-lg font-geist">
+                Find answers to common questions about Omkar Electricals services
+              </p>
+            </div>
+            <div className="max-w-3xl mx-auto">
+              <FAQAccordion items={faqItems} />
             </div>
           </div>
         </section>
