@@ -152,14 +152,14 @@ export default function Contact() {
         </section>
 
         {/* FAQ Section */}
-        <section className="px-4 bg-background" style={{ paddingTop: '66px', paddingBottom: '96px' }}>
+        <section className="px-4 bg-background" style={{ paddingTop: '26px', paddingBottom: '96px' }}>
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-semibold mb-4 font-geist" style={{ color: '#ff8c00' }}>
+              <h2 className="text-3xl md:text-4xl font-normal mb-4 font-geist" style={{ color: '#3266cc' }}>
                 Frequently Asked Questions
               </h2>
               <p className="text-gray-600 text-lg font-geist">
-                Find answers to common questions about Omkar Electricals services
+                Find answers to common questions about Omkar Electricals Services
               </p>
             </div>
             <div className="max-w-3xl mx-auto">
