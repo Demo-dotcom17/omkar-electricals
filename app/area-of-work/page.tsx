@@ -11,12 +11,12 @@ export default function AreaOfWork() {
       description: 'We have successfully executed electrical projects for educational institutions, delivering safe, reliable, and energy-efficient electrical systems for schools, colleges, universities, and training campuses. Our solutions ensure uninterrupted power supply, modern infrastructure, and compliance with the highest safety standards, creating secure and efficient learning environments.',
       logos: [
         {
-          name: 'KICTE',
-          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-9XCEUiq237FFgC4n8OqhbMFawq99UN.png',
+          name: 'Kolhapur Institute of Technology',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2821%29-4uP2W6bSzWpCGfAknnUTN6o4Y9YIbz.png',
         },
         {
-          name: 'Vidyapith College',
-          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-LzxSLR0tYhH2BTwvkDmfu7rpE4biot.png',
+          name: 'Vivekanand Shiksha Parivaar',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2822%29-okVwVGlPFKLzE8tjtLrxEFB4wBw91J.png',
         },
       ],
     },
@@ -26,11 +26,11 @@ export default function AreaOfWork() {
       logos: [
         {
           name: 'Bank of Baroda',
-          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-AcEludOrAZheFdeUAsjbMxNJ20yI3E.png',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2823%29-d4Jp0nG8Lpf2J3hO8uJg1kK3mWKpcI.png',
         },
         {
           name: 'Bank of Maharashtra',
-          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-6ZeZTj3qaxUXk35BupGyhg54TzFE2B.png',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2824%29-xeit5BiZjj01v51F48nwfJx5HBVwBd.png',
         },
       ],
     },
@@ -40,11 +40,11 @@ export default function AreaOfWork() {
       logos: [
         {
           name: 'SAI Developers & Builders',
-          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-8W9gGytMvU0yDOQokfjzxY4eNWpUQq.png',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2825%29-3Npfhmrv3PIgxWsDNxSqAM5QsTPEjS.png',
         },
         {
           name: 'Vishwakarma Builders',
-          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-EYFIy2IPmy8b4qfWjdjRVWrwun4Qf0.png',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qgAgLq2NjnU3kgzl58fBWvIfBFJOSx.png',
         },
       ],
     },

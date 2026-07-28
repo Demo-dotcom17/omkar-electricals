@@ -128,7 +128,7 @@ export default function Contact() {
             {/* Get Directions */}
             <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
               <div className="flex items-center justify-center gap-3 mb-4 font-roboto text-center">
-                <span className="text-foreground font-bold text-lg">GET DIRECTIONS</span>
+                <span className="text-foreground font-bold text-lg" style={{ fontFamily: '"Inter", sans-serif' }}>GET DIRECTIONS</span>
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2811%29-21TzetIXpvya2Yzvvn2OzcYiXmIQeH.png"
                   alt="Arrow"
