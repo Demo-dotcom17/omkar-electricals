@@ -73,7 +73,6 @@ export default function Contact() {
         {/* Hero Section */}
         <section className="bg-background px-4" style={{ paddingTop: '50px', paddingBottom: '40px' }}>
           <div className="max-w-5xl mx-auto">
-            <p className="text-accent font-bold text-sm md:text-base mb-4 font-geist">WHO WE ARE?</p>
             <h1 className="text-3xl md:text-4xl font-medium text-foreground mb-6 font-geist">
               You Have a <span className="text-accent">Question?</span>
             </h1>
