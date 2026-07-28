@@ -42,6 +42,10 @@ export default function AreaOfWork() {
           name: 'SAI Developers & Builders',
           url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2825%29-3Npfhmrv3PIgxWsDNxSqAM5QsTPEjS.png',
         },
+        {
+          name: 'Vishwakarma Builders',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qgAgLq2NjnU3kgzl58fBWvIfBFJOSx.png',
+        },
       ],
     },
   ]
