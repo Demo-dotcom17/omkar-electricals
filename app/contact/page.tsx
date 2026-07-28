@@ -106,19 +106,19 @@ export default function Contact() {
 
               {/* Quick Contact */}
               <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
-                <h3 className="text-xl font-semibold text-foreground mb-6 text-center font-roboto">Quick Contact</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-6 text-center font-geist">Quick Contact</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-geist">
                   <a
                     href="tel:+917721027474"
                     className="bg-slate-900 hover:bg-slate-800 text-white py-3 px-6 rounded text-center transition"
-                    style={{ fontWeight: '500' }}
+                    style={{ fontWeight: '500', fontFamily: '"Inter", sans-serif' }}
                   >
                     CALL NOW
                   </a>
                   <a
                     href="https://wa.me/919209254245"
                     className="bg-green-600 hover:bg-green-700 text-white py-3 px-6 rounded text-center transition"
-                    style={{ fontWeight: '500' }}
+                    style={{ fontWeight: '500', fontFamily: '"Inter", sans-serif' }}
                   >
                     WHATSAPP
                   </a>
@@ -155,7 +155,7 @@ export default function Contact() {
         <section className="px-4 bg-background" style={{ paddingTop: '26px', paddingBottom: '96px' }}>
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-normal mb-4 font-geist" style={{ color: '#3266cc' }}>
+              <h2 className="text-3xl md:text-4xl font-normal mb-4 font-geist" style={{ color: '#3266cc', fontWeight: '500' }}>
                 Frequently Asked Questions
               </h2>
               <p className="text-gray-600 text-lg font-geist">
