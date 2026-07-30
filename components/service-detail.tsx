@@ -37,26 +37,12 @@ export function ServiceDetail({
           {/* Content */}
           <div className={`${imageFirst ? 'md:col-span-7' : 'md:col-span-7'} order-1 ${imageFirst ? 'md:order-2' : 'md:order-1'}`}>
             <div className="space-y-6">
-              <div>
-                <p className="text-accent font-semibold text-sm uppercase tracking-wide mb-2 font-geist">
-                  Premium Service
-                </p>
-                <h1 className="text-3xl md:text-4xl font-bold text-foreground mb-3 font-geist">
-                  {title}
-                </h1>
-                <p className="text-lg text-muted-foreground font-geist mb-4">
-                  {intro}
-                </p>
-              </div>
-
-              <div className="space-y-4">
-                <p className="text-base text-foreground leading-relaxed font-geist">
-                  {description}
-                </p>
-                <p className="text-base text-foreground leading-relaxed font-geist">
-                  {fullDescription}
-                </p>
-              </div>
+              <p className="text-base text-foreground leading-relaxed font-geist">
+                {description}
+              </p>
+              <p className="text-base text-foreground leading-relaxed font-geist">
+                {fullDescription}
+              </p>
 
               {/* Features */}
               <div>
