@@ -1,11 +1,12 @@
 'use client'
 
 import Link from 'next/link'
-import { Menu, X } from 'lucide-react'
+import { Menu, X, ChevronDown } from 'lucide-react'
 import { useState } from 'react'
 
 export function Header() {
   const [isOpen, setIsOpen] = useState(false)
+  const [isServicesOpen, setIsServicesOpen] = useState(false)
 
   return (
     <header className="bg-white border-b border-border">
@@ -98,57 +99,100 @@ export function Header() {
             >
               About us
             </Link>
+            
+            {/* Services Accordion */}
             <div className="border-t border-border pt-2">
-              <p className="text-foreground font-medium text-sm px-2 mb-2">Our Services</p>
-              <Link
-                href="/services"
-                className="block text-foreground hover:text-accent font-medium pl-4"
-                onClick={() => setIsOpen(false)}
+              <button
+                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                className="flex items-center justify-between w-full text-foreground hover:text-accent font-medium px-2 py-1 rounded transition"
+                aria-expanded={isServicesOpen}
               >
-                All Services
-              </Link>
-              <Link
-                href="/services/residential-wiring"
-                className="block text-foreground hover:text-accent font-medium pl-4"
-                onClick={() => setIsOpen(false)}
+                <span>Our Services</span>
+                <ChevronDown
+                  size={20}
+                  className={`text-accent transition-transform duration-300 ${isServicesOpen ? 'rotate-180' : ''}`}
+                />
+              </button>
+              
+              {/* Services Submenu */}
+              <div
+                className={`transition-all duration-300 ease-in-out overflow-hidden ${
+                  isServicesOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                }`}
               >
-                Residential Wiring
-              </Link>
-              <Link
-                href="/services/commercial-installation"
-                className="block text-foreground hover:text-accent font-medium pl-4"
-                onClick={() => setIsOpen(false)}
-              >
-                Commercial Installation
-              </Link>
-              <Link
-                href="/services/industrial-electrical-work"
-                className="block text-foreground hover:text-accent font-medium pl-4"
-                onClick={() => setIsOpen(false)}
-              >
-                Industrial Electrical Work
-              </Link>
-              <Link
-                href="/services/maintenance-repair"
-                className="block text-foreground hover:text-accent font-medium pl-4"
-                onClick={() => setIsOpen(false)}
-              >
-                Maintenance & Repair
-              </Link>
-              <Link
-                href="/services/turnkey-projects"
-                className="block text-foreground hover:text-accent font-medium pl-4"
-                onClick={() => setIsOpen(false)}
-              >
-                Turnkey Projects
-              </Link>
-              <Link
-                href="/services/safety-compliance"
-                className="block text-foreground hover:text-accent font-medium pl-4"
-                onClick={() => setIsOpen(false)}
-              >
-                Safety Compliance
-              </Link>
+                <div className="pt-2 pb-2 space-y-1">
+                  <Link
+                    href="/services"
+                    className="block text-foreground hover:text-accent font-medium pl-6 py-1"
+                    onClick={() => {
+                      setIsOpen(false)
+                      setIsServicesOpen(false)
+                    }}
+                  >
+                    All Services
+                  </Link>
+                  <Link
+                    href="/services/residential-wiring"
+                    className="block text-foreground hover:text-accent font-medium pl-6 py-1"
+                    onClick={() => {
+                      setIsOpen(false)
+                      setIsServicesOpen(false)
+                    }}
+                  >
+                    Residential Wiring
+                  </Link>
+                  <Link
+                    href="/services/commercial-installation"
+                    className="block text-foreground hover:text-accent font-medium pl-6 py-1"
+                    onClick={() => {
+                      setIsOpen(false)
+                      setIsServicesOpen(false)
+                    }}
+                  >
+                    Commercial Installation
+                  </Link>
+                  <Link
+                    href="/services/industrial-electrical-work"
+                    className="block text-foreground hover:text-accent font-medium pl-6 py-1"
+                    onClick={() => {
+                      setIsOpen(false)
+                      setIsServicesOpen(false)
+                    }}
+                  >
+                    Industrial Electrical Work
+                  </Link>
+                  <Link
+                    href="/services/maintenance-repair"
+                    className="block text-foreground hover:text-accent font-medium pl-6 py-1"
+                    onClick={() => {
+                      setIsOpen(false)
+                      setIsServicesOpen(false)
+                    }}
+                  >
+                    Maintenance & Repair
+                  </Link>
+                  <Link
+                    href="/services/turnkey-projects"
+                    className="block text-foreground hover:text-accent font-medium pl-6 py-1"
+                    onClick={() => {
+                      setIsOpen(false)
+                      setIsServicesOpen(false)
+                    }}
+                  >
+                    Turnkey Projects
+                  </Link>
+                  <Link
+                    href="/services/safety-compliance"
+                    className="block text-foreground hover:text-accent font-medium pl-6 py-1"
+                    onClick={() => {
+                      setIsOpen(false)
+                      setIsServicesOpen(false)
+                    }}
+                  >
+                    Safety Compliance
+                  </Link>
+                </div>
+              </div>
             </div>
             <Link
               href="/area-of-work"
