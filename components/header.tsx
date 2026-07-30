@@ -29,9 +29,27 @@ export function Header() {
               <button className="text-foreground hover:text-accent transition">
                 Our Services
               </button>
-              <div className="absolute left-0 mt-0 w-48 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all">
-                <Link href="/services" className="block px-4 py-2 text-foreground hover:bg-background">
+              <div className="absolute left-0 mt-0 w-56 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+                <Link href="/services" className="block px-4 py-2 text-foreground hover:bg-background border-b border-border">
                   All Services
+                </Link>
+                <Link href="/services/residential-wiring" className="block px-4 py-2 text-foreground hover:bg-background">
+                  Residential Wiring
+                </Link>
+                <Link href="/services/commercial-installation" className="block px-4 py-2 text-foreground hover:bg-background">
+                  Commercial Installation
+                </Link>
+                <Link href="/services/industrial-electrical-work" className="block px-4 py-2 text-foreground hover:bg-background">
+                  Industrial Electrical Work
+                </Link>
+                <Link href="/services/maintenance-repair" className="block px-4 py-2 text-foreground hover:bg-background">
+                  Maintenance & Repair
+                </Link>
+                <Link href="/services/turnkey-projects" className="block px-4 py-2 text-foreground hover:bg-background">
+                  Turnkey Projects
+                </Link>
+                <Link href="/services/safety-compliance" className="block px-4 py-2 text-foreground hover:bg-background">
+                  Safety Compliance
                 </Link>
               </div>
             </div>
@@ -80,13 +98,58 @@ export function Header() {
             >
               About us
             </Link>
-            <Link
-              href="/services"
-              className="block text-foreground hover:text-accent font-medium"
-              onClick={() => setIsOpen(false)}
-            >
-              Our Services
-            </Link>
+            <div className="border-t border-border pt-2">
+              <p className="text-foreground font-medium text-sm px-2 mb-2">Our Services</p>
+              <Link
+                href="/services"
+                className="block text-foreground hover:text-accent font-medium pl-4"
+                onClick={() => setIsOpen(false)}
+              >
+                All Services
+              </Link>
+              <Link
+                href="/services/residential-wiring"
+                className="block text-foreground hover:text-accent font-medium pl-4"
+                onClick={() => setIsOpen(false)}
+              >
+                Residential Wiring
+              </Link>
+              <Link
+                href="/services/commercial-installation"
+                className="block text-foreground hover:text-accent font-medium pl-4"
+                onClick={() => setIsOpen(false)}
+              >
+                Commercial Installation
+              </Link>
+              <Link
+                href="/services/industrial-electrical-work"
+                className="block text-foreground hover:text-accent font-medium pl-4"
+                onClick={() => setIsOpen(false)}
+              >
+                Industrial Electrical Work
+              </Link>
+              <Link
+                href="/services/maintenance-repair"
+                className="block text-foreground hover:text-accent font-medium pl-4"
+                onClick={() => setIsOpen(false)}
+              >
+                Maintenance & Repair
+              </Link>
+              <Link
+                href="/services/turnkey-projects"
+                className="block text-foreground hover:text-accent font-medium pl-4"
+                onClick={() => setIsOpen(false)}
+              >
+                Turnkey Projects
+              </Link>
+              <Link
+                href="/services/safety-compliance"
+                className="block text-foreground hover:text-accent font-medium pl-4"
+                onClick={() => setIsOpen(false)}
+              >
+                Safety Compliance
+              </Link>
+            </div>
             <Link
               href="/area-of-work"
               className="block text-foreground hover:text-accent font-medium"
