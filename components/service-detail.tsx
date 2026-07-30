@@ -20,8 +20,8 @@ export function ServiceDetail({
   const imageFirst = index % 2 !== 0
 
   return (
-    <div className="py-8 md:py-12 px-4 bg-background">
-      <div className="max-w-6xl mx-auto">
+    <section className="bg-background py-8 md:py-12 px-4">
+      <div className="max-w-7xl mx-auto">
         <div className={`grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center ${imageFirst ? 'md:grid-flow-dense' : ''}`}>
           {/* Image */}
           <div className={`${imageFirst ? 'md:col-span-5' : 'md:col-start-8 md:col-span-5'} order-2 ${imageFirst ? 'md:order-1' : 'md:order-2'}`}>
@@ -72,6 +72,6 @@ export function ServiceDetail({
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
