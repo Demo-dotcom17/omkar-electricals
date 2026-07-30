@@ -25,11 +25,11 @@ export function ServiceDetail({
         <div className={`grid grid-cols-1 md:grid-cols-12 gap-8 md:gap-12 items-center ${imageFirst ? 'md:grid-flow-dense' : ''}`}>
           {/* Image */}
           <div className={`${imageFirst ? 'md:col-span-5' : 'md:col-start-8 md:col-span-5'} order-2 ${imageFirst ? 'md:order-1' : 'md:order-2'}`}>
-            <div className="relative rounded-xl overflow-hidden shadow-lg">
+            <div className="relative rounded-xl overflow-hidden shadow-lg flex items-center justify-center bg-gray-100">
               <img
                 src={image}
                 alt={title}
-                className="w-full h-96 md:h-[520px] object-cover"
+                className="w-full h-auto object-contain"
               />
             </div>
           </div>
