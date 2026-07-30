@@ -59,7 +59,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           description={service.description}
           fullDescription={service.fullDescription}
           features={service.features}
-          whyChoose={service.whyChoose}
           image={service.image}
           index={0}
         />

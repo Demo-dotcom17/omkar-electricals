@@ -39,7 +39,6 @@ export default function Services() {
               description={service.description}
               fullDescription={service.fullDescription}
               features={service.features}
-              whyChoose={service.whyChoose}
               image={service.image}
               index={index}
             />

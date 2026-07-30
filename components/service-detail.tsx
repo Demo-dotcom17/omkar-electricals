@@ -4,7 +4,6 @@ interface ServiceDetailProps {
   description: string
   fullDescription: string
   features: string[]
-  whyChoose: string[]
   image: string
   index?: number
 }
@@ -15,7 +14,6 @@ export function ServiceDetail({
   description,
   fullDescription,
   features,
-  whyChoose,
   image,
   index = 0,
 }: ServiceDetailProps) {
@@ -70,21 +68,6 @@ export function ServiceDetail({
                     <li key={feature} className="flex gap-3 items-start font-geist">
                       <span className="text-accent font-bold text-lg flex-shrink-0 mt-0.5">✓</span>
                       <span className="text-base text-foreground">{feature}</span>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-
-              {/* Why Choose */}
-              <div>
-                <h3 className="text-lg font-semibold text-foreground mb-4 font-geist">
-                  Why Choose Omkar For This Service
-                </h3>
-                <ul className="space-y-2">
-                  {whyChoose.map((point) => (
-                    <li key={point} className="flex gap-3 items-start font-geist">
-                      <span className="text-primary font-bold text-lg flex-shrink-0 mt-0.5">•</span>
-                      <span className="text-base text-foreground">{point}</span>
                     </li>
                   ))}
                 </ul>
