@@ -30,7 +30,7 @@ export function Header() {
               <button className="text-foreground hover:text-accent transition">
                 Our Services
               </button>
-              <div className="absolute left-0 mt-0 w-56 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50">
+              <div className="absolute left-0 mt-0 w-56 bg-white rounded shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all z-50 max-h-96 overflow-y-auto">
                 <Link href="/services" className="block px-4 py-2 text-foreground hover:bg-background border-b border-border">
                   All Services
                 </Link>
@@ -51,6 +51,18 @@ export function Header() {
                 </Link>
                 <Link href="/services/safety-compliance" className="block px-4 py-2 text-foreground hover:bg-background">
                   Safety Compliance
+                </Link>
+                <Link href="/services/earthing-lightning-protection" className="block px-4 py-2 text-foreground hover:bg-background">
+                  Earthing and Lightning Protection
+                </Link>
+                <Link href="/services/fire-protection-services" className="block px-4 py-2 text-foreground hover:bg-background">
+                  Fire Protection Services
+                </Link>
+                <Link href="/services/data-cabling" className="block px-4 py-2 text-foreground hover:bg-background">
+                  Data Cabling
+                </Link>
+                <Link href="/services/lt-cable-laying" className="block px-4 py-2 text-foreground hover:bg-background">
+                  LT Cable Laying Services
                 </Link>
               </div>
             </div>
@@ -190,6 +202,46 @@ export function Header() {
                     }}
                   >
                     Safety Compliance
+                  </Link>
+                  <Link
+                    href="/services/earthing-lightning-protection"
+                    className="block text-foreground hover:text-accent font-medium pl-6 py-1"
+                    onClick={() => {
+                      setIsOpen(false)
+                      setIsServicesOpen(false)
+                    }}
+                  >
+                    Earthing and Lightning Protection
+                  </Link>
+                  <Link
+                    href="/services/fire-protection-services"
+                    className="block text-foreground hover:text-accent font-medium pl-6 py-1"
+                    onClick={() => {
+                      setIsOpen(false)
+                      setIsServicesOpen(false)
+                    }}
+                  >
+                    Fire Protection Services
+                  </Link>
+                  <Link
+                    href="/services/data-cabling"
+                    className="block text-foreground hover:text-accent font-medium pl-6 py-1"
+                    onClick={() => {
+                      setIsOpen(false)
+                      setIsServicesOpen(false)
+                    }}
+                  >
+                    Data Cabling
+                  </Link>
+                  <Link
+                    href="/services/lt-cable-laying"
+                    className="block text-foreground hover:text-accent font-medium pl-6 py-1"
+                    onClick={() => {
+                      setIsOpen(false)
+                      setIsServicesOpen(false)
+                    }}
+                  >
+                    LT Cable Laying Services
                   </Link>
                 </div>
               </div>
