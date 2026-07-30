@@ -63,7 +63,7 @@ export function ServiceDetail({
               <div className="pt-4">
                 <a
                   href="/contact"
-                  className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-lg font-semibold hover:opacity-90 transition font-geist"
+                  className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition font-inter"
                 >
                   Request a Quote
                 </a>
