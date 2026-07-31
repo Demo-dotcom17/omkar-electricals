@@ -47,6 +47,10 @@ const brands = [
     name: 'Polyab',
     logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-UJGCG9rsYHtRkBsQlcV0041g6E35uX.png',
   },
+  {
+    name: 'Larsen & Toubro',
+    logo: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-iJ3vWSxxudQg2NvQRk2dpHK65vRZcQ.png',
+  },
 ]
 
 export function BrandCarousel() {

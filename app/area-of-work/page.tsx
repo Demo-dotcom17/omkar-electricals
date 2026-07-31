@@ -15,8 +15,8 @@ export default function AreaOfWork() {
           url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2821%29-4uP2W6bSzWpCGfAknnUTN6o4Y9YIbz.png',
         },
         {
-          name: 'Vivekanand Shiksha Parivaar',
-          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2822%29-okVwVGlPFKLzE8tjtLrxEFB4wBw91J.png',
+          name: 'Vivekanand College',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2832%29-ubHyOh913adHHmtcq1K0q5Ey3LqEKc.png',
         },
       ],
     },
