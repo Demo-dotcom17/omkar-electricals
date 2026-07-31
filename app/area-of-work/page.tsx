@@ -18,6 +18,10 @@ export default function AreaOfWork() {
           name: 'Vivekanand College',
           url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2832%29-ubHyOh913adHHmtcq1K0q5Ey3LqEKc.png',
         },
+        {
+          name: 'Podar International School',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2834%29-FwmxX1ST5SmqjTHJelYRwI9HRxih1T.png',
+        },
       ],
     },
     {
@@ -69,6 +73,16 @@ export default function AreaOfWork() {
         {
           name: 'VGA Construction',
           url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2830%29-bSHjECfTDu2DYmsFOEfMJVT6URiwVu.png',
+        },
+      ],
+    },
+    {
+      name: 'Utility & Government Projects',
+      description: 'We provide end-to-end power distribution infrastructure solutions for utilities, government bodies, industrial facilities, and commercial developments. Our expertise includes installation, testing, commissioning, and maintenance of LT/HT electrical networks, transformers, switchgear, substations, and underground/overhead cable systems. Every project is executed in accordance with Indian electrical standards, ensuring reliable, safe, and efficient power distribution.',
+      logos: [
+        {
+          name: 'MAHAVITARAN',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2833%29-2WyXF2fXORcIuAPjL3vokKSRMkLmyV.png',
         },
       ],
     },
