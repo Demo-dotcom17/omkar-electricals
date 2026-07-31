@@ -62,6 +62,14 @@ export default function AreaOfWork() {
           name: 'SD Associates',
           url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2829%29-4MJKNcCWO7nAmUaS4Mbss8RW9MXWBO.png',
         },
+        {
+          name: 'DR Construction',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2831%29-jln2gvMWnjEGGroJROxiqmcJrKkOIT.png',
+        },
+        {
+          name: 'VGA Construction',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2830%29-bSHjECfTDu2DYmsFOEfMJVT6URiwVu.png',
+        },
       ],
     },
   ]
