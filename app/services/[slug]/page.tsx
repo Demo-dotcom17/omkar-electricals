@@ -63,8 +63,8 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           index={0}
         />
 
-        {/* Shared Sections */}
-        <SharedServiceSections />
+        {/* Shared Sections (without additional services cards for primary services) */}
+        <SharedServiceSections showAdditionalServices={false} />
       </main>
       <Footer />
     </>

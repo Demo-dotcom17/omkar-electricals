@@ -2,14 +2,14 @@ import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { ServiceDetail } from '@/components/service-detail'
 import { SharedServiceSections } from '@/components/shared-service-sections'
-import { servicesData } from '@/lib/services-data'
+import { getPrimaryServices } from '@/lib/services-data'
 
 export const metadata = {
   title: 'All Electrical Services - Omkar Electricals',
   description: 'Explore our comprehensive range of electrical services including residential wiring, commercial installation, industrial work, maintenance, turnkey projects, and safety compliance.',
 }
 
-const services = servicesData
+const services = getPrimaryServices()
 
 
 export default function Services() {
@@ -45,8 +45,8 @@ export default function Services() {
           ))}
         </div>
 
-        {/* Shared Sections */}
-        <SharedServiceSections />
+        {/* Shared Sections (without additional services cards) */}
+        <SharedServiceSections showAdditionalServices={false} />
       </main>
       <Footer />
     </>

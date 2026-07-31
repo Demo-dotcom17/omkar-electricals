@@ -15,8 +15,8 @@ export default function AreaOfWork() {
           url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2821%29-4uP2W6bSzWpCGfAknnUTN6o4Y9YIbz.png',
         },
         {
-          name: 'Vivekanand Shiksha Parivaar',
-          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2822%29-okVwVGlPFKLzE8tjtLrxEFB4wBw91J.png',
+          name: 'Vivekanand College',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2832%29-ubHyOh913adHHmtcq1K0q5Ey3LqEKc.png',
         },
       ],
     },
@@ -32,6 +32,18 @@ export default function AreaOfWork() {
           name: 'Bank of Maharashtra',
           url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2824%29-xeit5BiZjj01v51F48nwfJx5HBVwBd.png',
         },
+        {
+          name: 'Union Bank of India',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2826%29-Tb4JNnVM4F8aqaut3v1G2QuALkf9fN.png',
+        },
+        {
+          name: 'Bank of India',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2828%29-XbAFaMBbMP8wPo5eERZOGiRJDLkJyB.png',
+        },
+        {
+          name: 'Central Bank of India',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2827%29-Ip8oDfL2oE33qFwF1H69k6DThcm0vc.png',
+        },
       ],
     },
     {
@@ -45,6 +57,18 @@ export default function AreaOfWork() {
         {
           name: 'Vishwakarma Builders',
           url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-qgAgLq2NjnU3kgzl58fBWvIfBFJOSx.png',
+        },
+        {
+          name: 'SD Associates',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2829%29-4MJKNcCWO7nAmUaS4Mbss8RW9MXWBO.png',
+        },
+        {
+          name: 'DR Construction',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2831%29-jln2gvMWnjEGGroJROxiqmcJrKkOIT.png',
+        },
+        {
+          name: 'VGA Construction',
+          url: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2830%29-bSHjECfTDu2DYmsFOEfMJVT6URiwVu.png',
         },
       ],
     },

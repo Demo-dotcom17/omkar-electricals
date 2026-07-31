@@ -1,10 +1,15 @@
 import { BrandCarousel } from '@/components/brand-carousel'
 
-export function SharedServiceSections() {
+interface SharedServiceSectionsProps {
+  showAdditionalServices?: boolean
+}
+
+export function SharedServiceSections({ showAdditionalServices = false }: SharedServiceSectionsProps) {
   return (
     <>
       {/* Additional Services */}
-      <section className="bg-secondary py-16 md:py-24 px-4">
+      {showAdditionalServices && (
+        <section className="bg-secondary py-16 md:py-24 px-4">
         <div className="max-w-7xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-8 font-geist">
             Additional Services We Offer
@@ -53,6 +58,7 @@ export function SharedServiceSections() {
           </div>
         </div>
       </section>
+      )}
 
       {/* Trusted Brands & Partners */}
       <BrandCarousel />

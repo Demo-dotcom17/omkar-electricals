@@ -64,6 +64,9 @@ export function Header() {
                 <Link href="/services/lt-cable-laying" className="block px-4 py-2 text-foreground hover:bg-background">
                   LT Cable Laying Services
                 </Link>
+                <Link href="/services/additional-services" className="block px-4 py-2 text-foreground hover:bg-background border-t border-border">
+                  Additional Services
+                </Link>
               </div>
             </div>
             <Link href="/area-of-work" className="text-foreground hover:text-accent transition">
@@ -256,6 +259,16 @@ export function Header() {
                     }}
                   >
                     LT Cable Laying Services
+                  </Link>
+                  <Link
+                    href="/services/additional-services"
+                    className="block text-foreground hover:text-accent font-medium pl-6 py-1 border-t border-border"
+                    onClick={() => {
+                      setIsOpen(false)
+                      setIsServicesOpen(false)
+                    }}
+                  >
+                    Additional Services
                   </Link>
                 </div>
                 
