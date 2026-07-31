@@ -1,15 +1,11 @@
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
-import { ServiceDetail } from '@/components/service-detail'
 import { SharedServiceSections } from '@/components/shared-service-sections'
-import { getAdditionalServices } from '@/lib/services-data'
 
 export const metadata = {
   title: 'Additional Electrical Services - Omkar Electricals',
-  description: 'Explore our specialized additional services including earthing and lightning protection, fire protection systems, data cabling, and LT cable laying services.',
+  description: 'Explore our comprehensive range of specialized additional services including solar installation, emergency services, lighting design, and more.',
 }
-
-const services = getAdditionalServices()
 
 export default function AdditionalServices() {
   return (
@@ -28,23 +24,7 @@ export default function AdditionalServices() {
           </div>
         </section>
 
-        {/* Additional Services Sections */}
-        <div>
-          {services.map((service, index) => (
-            <ServiceDetail
-              key={service.id}
-              title={service.title}
-              intro={service.intro}
-              description={service.description}
-              fullDescription={service.fullDescription}
-              features={service.features}
-              image={service.image}
-              index={index}
-            />
-          ))}
-        </div>
-
-        {/* Shared Sections (with additional services cards) */}
+        {/* Shared Sections (with additional services cards grid) */}
         <SharedServiceSections showAdditionalServices={true} />
       </main>
       <Footer />
