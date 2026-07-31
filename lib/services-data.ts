@@ -10,6 +10,7 @@ export interface Service {
   image: string
   metaTitle: string
   metaDescription: string
+  isAdditional?: boolean
 }
 
 export const servicesData: Service[] = [
@@ -187,6 +188,7 @@ export const servicesData: Service[] = [
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-vppPejJ9fqUc7uWZzrKSzWNP619BMi.png',
     metaTitle: 'Earthing and Lightning Protection Systems - Omkar Electricals',
     metaDescription: 'Professional earthing and lightning protection installation, testing, and maintenance for residential, commercial, and industrial properties.',
+    isAdditional: true,
   },
   {
     id: 'fire-protection-services',
@@ -212,6 +214,7 @@ export const servicesData: Service[] = [
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-fq7hqIWgktjNaYzmu2vFUc7Xo380Fh.png',
     metaTitle: 'Fire Protection Services - Omkar Electricals',
     metaDescription: 'Comprehensive fire protection systems including alarms, detection, suppression, and emergency lighting for buildings and industries.',
+    isAdditional: true,
   },
   {
     id: 'data-cabling',
@@ -237,6 +240,7 @@ export const servicesData: Service[] = [
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-B5ZyuiIg4IUnUj0gMf7sStyxSKmyzg.png',
     metaTitle: 'Data Cabling Solutions - Omkar Electricals',
     metaDescription: 'Structured data cabling services with CAT6, CAT6A, and fiber optic solutions for reliable network connectivity.',
+    isAdditional: true,
   },
   {
     id: 'lt-cable-laying',
@@ -262,9 +266,18 @@ export const servicesData: Service[] = [
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-paa61isPVHRnA5v5sDEiW6qKvIATJY.png',
     metaTitle: 'LT Cable Laying Services - Omkar Electricals',
     metaDescription: 'Professional underground LT cable laying, termination, and testing for residential, commercial, and industrial power distribution.',
+    isAdditional: true,
   },
 ]
 
 export function getServiceBySlug(slug: string): Service | undefined {
   return servicesData.find((service) => service.slug === slug)
+}
+
+export function getPrimaryServices(): Service[] {
+  return servicesData.filter((service) => !service.isAdditional)
+}
+
+export function getAdditionalServices(): Service[] {
+  return servicesData.filter((service) => service.isAdditional)
 }

@@ -1,7 +1,6 @@
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { ServiceDetail } from '@/components/service-detail'
-import { SharedServiceSections } from '@/components/shared-service-sections'
 import { servicesData, getServiceBySlug } from '@/lib/services-data'
 import { notFound } from 'next/navigation'
 
@@ -62,9 +61,6 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
           image={service.image}
           index={0}
         />
-
-        {/* Shared Sections */}
-        <SharedServiceSections />
       </main>
       <Footer />
     </>

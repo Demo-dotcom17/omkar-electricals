@@ -1,17 +1,16 @@
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { ServiceDetail } from '@/components/service-detail'
-import { getPrimaryServices } from '@/lib/services-data'
+import { getAdditionalServices } from '@/lib/services-data'
 
 export const metadata = {
-  title: 'All Electrical Services - Omkar Electricals',
-  description: 'Explore our comprehensive range of electrical services including residential wiring, commercial installation, industrial work, maintenance, turnkey projects, and safety compliance.',
+  title: 'Additional Electrical Services - Omkar Electricals',
+  description: 'Explore our specialized additional services including earthing and lightning protection, fire protection systems, data cabling, and LT cable laying services.',
 }
 
-const services = getPrimaryServices()
+const services = getAdditionalServices()
 
-
-export default function Services() {
+export default function AdditionalServices() {
   return (
     <>
       <Header />
@@ -20,15 +19,15 @@ export default function Services() {
         <section className="bg-background py-12 md:py-20 px-4">
           <div className="max-w-7xl mx-auto">
             <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-6 font-geist">
-              All Electrical Services
+              Additional Services
             </h1>
             <p className="max-w-2xl font-geist" style={{ fontSize: '17px', color: '#2c3036', textAlign: 'justify' }}>
-              Omkar Electricals provides comprehensive electrical services for residential, commercial, governments, institutional and industrial projects. Our experienced team is equipped to handle any electrical challenge with expertise and professionalism.
+              Beyond our primary electrical services, Omkar Electricals offers specialized solutions including earthing and lightning protection systems, comprehensive fire protection services, structured data cabling, and professional LT cable laying. These specialized services ensure complete infrastructure safety and modern connectivity.
             </p>
           </div>
         </section>
 
-        {/* Premium Services Sections */}
+        {/* Additional Services Sections */}
         <div>
           {services.map((service, index) => (
             <ServiceDetail
