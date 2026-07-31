@@ -128,11 +128,25 @@ export function Header() {
               
               {/* Services Submenu */}
               <div
-                className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                  isServicesOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
+                className={`transition-all duration-300 ease-in-out relative ${
+                  isServicesOpen ? 'opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
                 }`}
+                style={{
+                  maxHeight: isServicesOpen ? '60vh' : '0',
+                }}
               >
-                <div className="pt-2 pb-2 space-y-1">
+                {/* Top fade indicator */}
+                {isServicesOpen && (
+                  <div className="absolute top-0 left-0 right-0 h-3 bg-gradient-to-b from-white to-transparent pointer-events-none z-10" />
+                )}
+                
+                {/* Scrollable services list */}
+                <div className="services-scroll pt-2 pb-2 space-y-1 overflow-y-auto overflow-x-hidden" style={{ maxHeight: 'calc(60vh - 12px)', scrollbarWidth: 'none', msOverflowStyle: 'none' }}>
+                  <style>{`
+                    .services-scroll::-webkit-scrollbar {
+                      display: none;
+                    }
+                  `}</style>
                   <Link
                     href="/services"
                     className="block text-foreground hover:text-accent font-medium pl-6 py-1"
@@ -244,6 +258,11 @@ export function Header() {
                     LT Cable Laying Services
                   </Link>
                 </div>
+                
+                {/* Bottom fade indicator */}
+                {isServicesOpen && (
+                  <div className="absolute bottom-0 left-0 right-0 h-3 bg-gradient-to-t from-white to-transparent pointer-events-none z-10" />
+                )}
               </div>
             </div>
             <Link
