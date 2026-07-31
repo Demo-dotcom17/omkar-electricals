@@ -1,6 +1,7 @@
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
 import { ServiceDetail } from '@/components/service-detail'
+import { SharedServiceSections } from '@/components/shared-service-sections'
 import { getPrimaryServices } from '@/lib/services-data'
 
 export const metadata = {
@@ -43,6 +44,9 @@ export default function Services() {
             />
           ))}
         </div>
+
+        {/* Shared Sections (without additional services cards) */}
+        <SharedServiceSections showAdditionalServices={false} />
       </main>
       <Footer />
     </>
