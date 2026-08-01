@@ -126,17 +126,31 @@ export function HeroSlider() {
                       ? 'opacity-100 scale-100'
                       : 'opacity-0 scale-95'
                   }`}
+                  style={{ fontFamily: '"Geist", sans-serif' }}
                 >
-                  <div className="space-y-6">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                  <div className="space-y-6" style={{ fontFamily: '"Geist", sans-serif' }}>
+                    <h1 
+                      className="text-4xl md:text-5xl leading-tight"
+                      style={{ 
+                        fontFamily: '"Geist", sans-serif',
+                        fontWeight: 500,
+                        fontSize: '72px'
+                      }}
+                    >
                       Powering Your World
                     </h1>
 
-                    <p className="text-lg md:text-xl font-medium text-blue-300">
+                    <p 
+                      className="text-lg md:text-xl font-medium text-blue-300"
+                      style={{ fontFamily: '"Geist", sans-serif' }}
+                    >
                       Government Licensed Electrical Contractors
                     </p>
 
-                    <p className="text-base md:text-lg text-gray-200 leading-relaxed">
+                    <p 
+                      className="text-base md:text-lg text-gray-200 leading-relaxed"
+                      style={{ textAlign: 'justify' }}
+                    >
                       Delivering trusted electrical contracting services across Maharashtra since 2001. We specialize in residential, commercial, industrial, government, and infrastructure electrical projects with a commitment to safety, quality, and timely execution.
                     </p>
 
