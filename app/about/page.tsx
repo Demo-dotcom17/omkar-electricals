@@ -17,7 +17,7 @@ export default function About() {
           <div className="max-w-7xl mx-auto">
             <p className="font-bold text-sm md:text-base mb-4 font-geist" style={{ color: 'rgb(255, 255, 255)', fontFamily: '"Manrope", sans-serif' }}>WHO WE ARE?</p>
             <h1 className="text-3xl md:text-4xl font-semibold mb-6" style={{ color: 'rgb(245, 241, 235)', fontFamily: '"Manrope", sans-serif' }}>
-              Want to Know a little <span style={{ color: 'rgb(255, 255, 255)', fontWeight: 700 }}>About us?</span>
+              Want to Know a little <span style={{ color: 'rgb(255, 255, 255)', fontWeight: 600 }}>About us?</span>
             </h1>
             <p className="text-2xl md:text-3xl font-normal mb-8" style={{ color: 'rgb(245, 241, 235)' }}>Let us tell you.</p>
 
