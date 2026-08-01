@@ -133,6 +133,19 @@ export default function Home() {
                 alt="We Care - Electrical services"
                 className="w-full max-w-3xl h-auto object-contain mb-8"
               />
+              <p 
+                className="text-center leading-relaxed"
+                style={{
+                  maxWidth: '700px',
+                  color: '#4B5563',
+                  fontFamily: '"Geist", sans-serif',
+                  fontWeight: 500,
+                  fontSize: '16px',
+                  marginTop: '24px'
+                }}
+              >
+                Delivering safe, efficient, and future-ready electrical solutions for industrial, commercial, institutional, and residential projects.
+              </p>
             </div>
           </div>
         </section>
