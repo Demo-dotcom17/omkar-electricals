@@ -124,45 +124,28 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Electrical Services List */}
+        {/* We Care Section */}
         <section className="px-4 bg-background" style={{ paddingTop: '66px', paddingBottom: '96px' }}>
           <div className="max-w-5xl mx-auto">
-            <h2 className="font-normal text-foreground mb-12 font-geist text-center" style={{ fontSize: '30px' }}>
-              We carry out Electrical services like
-            </h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8" style={{ fontFamily: '"Geist", sans-serif', fontSize: '18px', textTransform: 'capitalize' }}>
-              <div className="flex items-start gap-3">
-                <span className="text-accent font-bold text-lg flex-shrink-0">•</span>
-                <p className="text-gray-700 font-geist">Panel Testing</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-accent font-bold text-lg flex-shrink-0">•</span>
-                <p className="text-gray-700 font-geist">Fault Finding in a circuit</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-accent font-bold text-lg flex-shrink-0">•</span>
-                <p className="text-gray-700 font-geist">Electrical Power Harmonic testing</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-accent font-bold text-lg flex-shrink-0">•</span>
-                <p className="text-gray-700 font-geist">Transformer Testing</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-accent font-bold text-lg flex-shrink-0">•</span>
-                <p className="text-gray-700 font-geist">Identifying quality of power</p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="text-accent font-bold text-lg flex-shrink-0">•</span>
-                <p className="text-gray-700 font-geist">DG Efficiency and consumption calculations</p>
-              </div>
-            </div>
-            <div className="text-center">
-              <Link
-                href="/contact"
-                className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded font-medium hover:opacity-90 transition font-inter"
+            <div className="flex flex-col items-center justify-center">
+              <img
+                src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2836%29-3EwS6qKeNkFBEJGkIG24XL4Rs7gmQK.png"
+                alt="We Care - Electrical services"
+                className="w-full max-w-3xl h-auto object-contain mb-8"
+              />
+              <p 
+                className="text-center leading-relaxed"
+                style={{
+                  maxWidth: '700px',
+                  color: '#4B5563',
+                  fontFamily: '"Geist", sans-serif',
+                  fontWeight: 500,
+                  fontSize: '16px',
+                  marginTop: '24px'
+                }}
               >
-                Contact Now
-              </Link>
+                Delivering safe, efficient, and future-ready electrical solutions for industrial, commercial, institutional, and residential projects.
+              </p>
             </div>
           </div>
         </section>
