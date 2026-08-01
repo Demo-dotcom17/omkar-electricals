@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { ChevronLeft, ChevronRight } from 'lucide-react'
@@ -42,7 +42,8 @@ const slides: Slide[] = [
 export function HeroSlider() {
   const [currentSlide, setCurrentSlide] = useState(0)
   const [isAutoplay, setIsAutoplay] = useState(true)
-  const [isTransitioning, setIsTransitioning] = useState(true)
+  const touchStartX = useRef(0)
+  const touchEndX = useRef(0)
 
   useEffect(() => {
     if (!isAutoplay) return
@@ -66,11 +67,35 @@ export function HeroSlider() {
     setCurrentSlide(index)
   }
 
+  const handleTouchStart = (e: React.TouchEvent) => {
+    touchStartX.current = e.clientX || e.touches[0].clientX
+  }
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    touchEndX.current = e.clientX || e.changedTouches[0].clientX
+    handleSwipe()
+  }
+
+  const handleSwipe = () => {
+    const swipeThreshold = 50
+    const diff = touchStartX.current - touchEndX.current
+
+    if (Math.abs(diff) > swipeThreshold) {
+      if (diff > 0) {
+        nextSlide()
+      } else {
+        prevSlide()
+      }
+    }
+  }
+
   return (
     <section
       className="relative h-screen w-full overflow-hidden bg-black"
       onMouseEnter={() => setIsAutoplay(false)}
       onMouseLeave={() => setIsAutoplay(true)}
+      onTouchStart={handleTouchStart}
+      onTouchEnd={handleTouchEnd}
     >
       {/* Slides Container */}
       <div className="relative h-full w-full">
@@ -91,64 +116,44 @@ export function HeroSlider() {
             />
             <div className="absolute inset-0 bg-black/50" />
 
-            {/* Content */}
-            <div className="relative h-full flex items-center justify-center md:justify-start">
+            {/* Content - Full Width, Left Aligned */}
+            <div className="relative h-full flex items-center">
               <div className="max-w-7xl mx-auto px-4 md:px-8 w-full">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-16 items-center">
-                  {/* Left Content */}
-                  <div
-                    className={`text-white transition-all duration-700 ${
-                      index === currentSlide
-                        ? 'opacity-100 translate-x-0'
-                        : 'opacity-0 -translate-x-8'
-                    }`}
-                  >
-                    <div className="space-y-6">
-                      <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-balance">
-                        Powering Your World
-                      </h1>
+                {/* Left Content Only */}
+                <div
+                  className={`text-white transition-all duration-700 max-w-2xl ${
+                    index === currentSlide
+                      ? 'opacity-100 translate-x-0'
+                      : 'opacity-0 -translate-x-8'
+                  }`}
+                >
+                  <div className="space-y-6">
+                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                      Powering Your World
+                    </h1>
 
-                      <p className="text-lg md:text-xl font-medium text-blue-300">
-                        Government Licensed Electrical Contractors
-                      </p>
+                    <p className="text-lg md:text-xl font-medium text-blue-300">
+                      Government Licensed Electrical Contractors
+                    </p>
 
-                      <p className="text-base md:text-lg text-gray-200 leading-relaxed max-w-lg">
-                        Delivering trusted electrical contracting services across Maharashtra since 2001. We specialize in residential, commercial, industrial, government, and infrastructure electrical projects with a commitment to safety, quality, and timely execution.
-                      </p>
+                    <p className="text-base md:text-lg text-gray-200 leading-relaxed max-w-xl">
+                      Delivering trusted electrical contracting services across Maharashtra since 2001. We specialize in residential, commercial, industrial, government, and infrastructure electrical projects with a commitment to safety, quality, and timely execution.
+                    </p>
 
-                      {/* Buttons */}
-                      <div className="flex flex-col sm:flex-row gap-4 pt-6">
-                        <Link
-                          href="/contact"
-                          className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105 text-center"
-                        >
-                          Get a Quote
-                        </Link>
-                        <Link
-                          href="/services"
-                          className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105 text-center"
-                        >
-                          Explore Services
-                        </Link>
-                      </div>
-                    </div>
-                  </div>
-
-                  {/* Right Side - Image (visual balance) */}
-                  <div className="hidden md:flex items-center justify-center">
-                    <div
-                      className={`relative w-full h-96 rounded-lg overflow-hidden transition-all duration-700 ${
-                        index === currentSlide
-                          ? 'opacity-100 scale-100'
-                          : 'opacity-0 scale-95'
-                      }`}
-                    >
-                      <Image
-                        src={slide.image}
-                        alt={slide.alt}
-                        fill
-                        className="object-cover"
-                      />
+                    {/* Buttons - Stack on mobile, side-by-side on desktop */}
+                    <div className="flex flex-col sm:flex-row gap-4 pt-6">
+                      <Link
+                        href="/contact"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105 text-center sm:w-auto"
+                      >
+                        Get a Quote
+                      </Link>
+                      <Link
+                        href="/services"
+                        className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105 text-center sm:w-auto"
+                      >
+                        Explore Services
+                      </Link>
                     </div>
                   </div>
                 </div>
