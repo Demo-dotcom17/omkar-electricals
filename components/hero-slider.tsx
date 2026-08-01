@@ -116,12 +116,12 @@ export function HeroSlider() {
             />
             <div className="absolute inset-0 bg-black/50" />
 
-            {/* Content - Full Width, Left Aligned */}
-            <div className="relative h-full flex items-center">
-              <div className="max-w-7xl mx-auto px-4 md:px-8 w-full">
+            {/* Content - Vertically Centered, Left Aligned */}
+            <div className="absolute inset-0 flex items-center justify-start">
+              <div className="w-full px-4 md:px-8">
                 {/* Left Content Only */}
                 <div
-                  className={`text-white transition-all duration-700 max-w-2xl ${
+                  className={`text-white transition-all duration-700 max-w-[650px] ${
                     index === currentSlide
                       ? 'opacity-100 translate-x-0'
                       : 'opacity-0 -translate-x-8'
@@ -136,7 +136,7 @@ export function HeroSlider() {
                       Government Licensed Electrical Contractors
                     </p>
 
-                    <p className="text-base md:text-lg text-gray-200 leading-relaxed max-w-xl">
+                    <p className="text-base md:text-lg text-gray-200 leading-relaxed">
                       Delivering trusted electrical contracting services across Maharashtra since 2001. We specialize in residential, commercial, industrial, government, and infrastructure electrical projects with a commitment to safety, quality, and timely execution.
                     </p>
 
