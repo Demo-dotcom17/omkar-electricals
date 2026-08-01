@@ -9,10 +9,10 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-white">
       {/* Main footer content */}
-      <div className="max-w-5xl mx-auto px-4 py-8 font-geist">
+      <div className="max-w-7xl mx-auto px-4 py-8 font-geist">
         <div className="flex flex-col items-center text-center">
           {/* Quick Links */}
-          <ul className="flex flex-wrap justify-center gap-2 md:gap-6 text-sm mb-6">
+          <ul className="flex flex-wrap justify-center gap-8 md:gap-12 text-sm mb-6">
             <li>
               <Link href="/" className="text-gray-300 hover:text-accent transition">
                 Home
