@@ -12,7 +12,7 @@ export function Header() {
     <header className="bg-white border-b border-border">
       {/* Main navigation */}
       <nav className="px-4" style={{ paddingTop: '5px', paddingBottom: '5px', fontFamily: '"Inter", sans-serif' }}>
-        <div className="max-w-7xl mx-auto flex items-center justify-between" style={{ fontFamily: '"Inter", sans-serif' }}>
+        <div className="max-w-7xl mx-auto flex items-center justify-between" style={{ fontFamily: '"Inter", sans-serif', fontSize: '18px' }}>
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <img src="/omkar-logo-new.png" alt="Omkar Electricals" className="h-14 w-auto" />

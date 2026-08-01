@@ -45,15 +45,15 @@ export function ServiceDetail({
               </p>
 
               {/* Features */}
-              <div>
+              <div style={{ lineHeight: '1.4' }}>
                 <h3 className="text-lg font-semibold text-foreground mb-4 font-geist">
                   What We Provide
                 </h3>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  {features.map((feature) => (
-                    <li key={feature} className="flex gap-3 items-start font-geist">
+                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3" style={{ lineHeight: '1.25' }}>
+                  {features.map((feature, idx) => (
+                    <li key={feature} className={`gap-3 items-start font-geist ${idx === 2 ? 'inline-flex' : 'flex'}`} style={{ lineHeight: idx === 0 || idx === 1 || idx === 3 ? '1.25' : undefined }}>
                       <span className="text-accent font-bold text-lg flex-shrink-0 mt-0.5">✓</span>
-                      <span className="text-base text-foreground">{feature}</span>
+                      <span className="text-base text-foreground" style={{ lineHeight: '1.2' }}>{feature}</span>
                     </li>
                   ))}
                 </ul>
@@ -63,7 +63,8 @@ export function ServiceDetail({
               <div className="pt-4">
                 <a
                   href="/contact"
-                  className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition font-inter"
+                  className="inline-block text-accent-foreground px-8 py-3 rounded-lg font-medium hover:opacity-90 transition font-inter"
+                  style={{ backgroundColor: 'rgb(18, 79, 198)' }}
                 >
                   Request a Quote
                 </a>

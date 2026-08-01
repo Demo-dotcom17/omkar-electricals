@@ -18,12 +18,12 @@ export default function Services() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="bg-background py-12 md:py-20 px-4">
+        <section className="py-12 md:py-20 px-4" style={{ backgroundColor: 'rgb(18, 79, 198)', color: 'rgb(18, 79, 198)' }}>
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-6 font-geist">
+            <h1 className="text-3xl md:text-4xl font-semibold mb-6" style={{ color: 'rgb(255, 255, 255)', fontFamily: '"Manrope", sans-serif' }}>
               All Electrical Services
             </h1>
-            <p className="max-w-2xl font-geist" style={{ fontSize: '17px', color: '#2c3036', textAlign: 'justify' }}>
+            <p className="max-w-2xl font-geist" style={{ fontSize: '17px', color: 'rgb(255, 255, 255)', textAlign: 'justify' }}>
               Omkar Electricals provides comprehensive electrical services for residential, commercial, governments, institutional and industrial projects. Our experienced team is equipped to handle any electrical challenge with expertise and professionalism.
             </p>
           </div>
