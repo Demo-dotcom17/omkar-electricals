@@ -125,7 +125,7 @@ export default function Home() {
         </section>
 
         {/* We Care Section */}
-        <section className="px-4 bg-background" style={{ backgroundColor: '#ffffff', paddingTop: '66px', paddingBottom: '96px' }}>
+        <section className="px-4 bg-background" style={{ backgroundColor: '#ffffff', paddingTop: '26px', paddingBottom: '56px' }}>
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col items-center justify-center">
               <img
