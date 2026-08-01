@@ -9,46 +9,43 @@ export function Footer() {
   return (
     <footer className="bg-foreground text-white">
       {/* Main footer content */}
-      <div className="max-w-5xl mx-auto px-4 py-4 font-geist">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-16 mb-4 text-center">
-          {/* About section */}
-
-          {/* Quick links */}
-          <div className="text-left">
-            <h3 className="font-medium text-lg mb-2">Quick Links</h3>
-            <ul className="flex flex-wrap gap-6 text-sm" style={{ textAlign: 'justify' }}>
-              <li>
-                <Link href="/" className="text-gray-300 hover:text-accent transition">
-                  Home
-                </Link>
-              </li>
-              <li>
-                <Link href="/about" className="text-gray-300 hover:text-accent transition">
-                  About Us
-                </Link>
-              </li>
-              <li>
-                <Link href="/services" className="text-gray-300 hover:text-accent transition">
-                  Services
-                </Link>
-              </li>
-              <li>
-                <Link href="/careers" className="text-gray-300 hover:text-accent transition">
-                  Careers
-                </Link>
-              </li>
-              <li>
-                <Link href="/contact" className="text-gray-300 hover:text-accent transition">
-                  Contact
-                </Link>
-              </li>
-            </ul>
-          </div>
+      <div className="max-w-5xl mx-auto px-4 py-8 font-geist">
+        <div className="flex flex-col items-center text-center">
+          {/* Quick Links */}
+          <ul className="flex flex-wrap justify-center gap-2 md:gap-6 text-sm mb-6">
+            <li>
+              <Link href="/" className="text-gray-300 hover:text-accent transition">
+                Home
+              </Link>
+            </li>
+            <li className="hidden md:inline">|</li>
+            <li>
+              <Link href="/about" className="text-gray-300 hover:text-accent transition">
+                About Us
+              </Link>
+            </li>
+            <li className="hidden md:inline">|</li>
+            <li>
+              <Link href="/services" className="text-gray-300 hover:text-accent transition">
+                Services
+              </Link>
+            </li>
+            <li className="hidden md:inline">|</li>
+            <li>
+              <Link href="/careers" className="text-gray-300 hover:text-accent transition">
+                Careers
+              </Link>
+            </li>
+            <li className="hidden md:inline">|</li>
+            <li>
+              <Link href="/contact" className="text-gray-300 hover:text-accent transition">
+                Contact
+              </Link>
+            </li>
+          </ul>
 
           {/* Copyright */}
-          <div className="text-center text-gray-300 text-sm">
-            <p>© Omkar Electricals {currentYear}</p>
-          </div>
+          <p className="text-gray-300 text-sm">© Omkar Electricals {currentYear}</p>
         </div>
       </div>
     </footer>

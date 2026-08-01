@@ -71,12 +71,12 @@ export default function Contact() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="bg-background px-4" style={{ paddingTop: '50px', paddingBottom: '40px' }}>
+        <section className="px-4" style={{ backgroundColor: 'rgb(18, 79, 198)', paddingTop: '50px', paddingBottom: '40px' }}>
           <div className="max-w-5xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-medium text-foreground mb-6 font-geist">
-              You Have a <span className="text-accent">Question?</span>
+            <h1 className="text-3xl md:text-4xl font-medium mb-6" style={{ color: 'rgb(255, 255, 255)', fontFamily: '"Manrope", sans-serif' }}>
+              You Have a <span style={{ color: 'rgb(255, 255, 255)' }}>Question?</span>
             </h1>
-            <p className="text-2xl md:text-3xl text-foreground font-normal font-geist">Let us Answer it.</p>
+            <p className="text-2xl md:text-3xl font-normal" style={{ color: 'rgb(255, 255, 255)' }}>Let us Answer it.</p>
           </div>
         </section>
 
@@ -85,7 +85,7 @@ export default function Contact() {
           <div className="max-w-5xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
               {/* Head Office */}
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border text-center font-roboto">
+              <div className="bg-white p-8 rounded-lg shadow-sm border border-border text-center">
                 <div className="flex justify-center mb-4">
                   <img
                     src="/google-maps-pin.png"
@@ -93,7 +93,7 @@ export default function Contact() {
                     className="w-16 h-16 object-contain"
                   />
                 </div>
-                <h3 className="text-xl font-semibold text-foreground mb-4 font-roboto">Head Office</h3>
+                <h3 className="text-xl font-semibold text-foreground mb-4" style={{ fontFamily: '"Manrope", sans-serif', fontWeight: '700' }}>Head Office</h3>
                 <p className="text-gray-700 text-base leading-relaxed" style={{ fontFamily: '"Inter", sans-serif' }}>
                   Janwadkar Complex lower ground (LG-2), Panchaganga Hospital,
                   <br />
@@ -104,8 +104,8 @@ export default function Contact() {
               </div>
 
               {/* Quick Contact */}
-              <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
-                <h3 className="text-xl font-semibold text-foreground mb-6 text-center font-geist">Quick Contact</h3>
+              <div className="bg-white rounded-lg shadow-sm border border-border" style={{ paddingTop: '82px', paddingLeft: '32px', paddingRight: '32px', paddingBottom: '32px' }}>
+                <h3 className="text-xl font-semibold text-foreground mb-6 text-center" style={{ fontFamily: '"Manrope", sans-serif', fontWeight: '700' }}>Quick Contact</h3>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4 font-geist">
                   <a
                     href="tel:+917721027474"
@@ -127,8 +127,8 @@ export default function Contact() {
 
             {/* Get Directions */}
             <div className="bg-white p-8 rounded-lg shadow-sm border border-border">
-              <div className="flex items-center justify-center gap-3 mb-4 font-roboto text-center">
-                <span className="text-foreground font-bold text-lg" style={{ fontFamily: '"Inter", sans-serif' }}>GET DIRECTIONS</span>
+              <div className="flex items-center justify-center gap-3 mb-4 text-center">
+                <span className="text-foreground font-bold" style={{ fontFamily: '"Manrope", sans-serif', fontSize: '20px' }}>GET DIRECTIONS</span>
                 <img
                   src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2811%29-21TzetIXpvya2Yzvvn2OzcYiXmIQeH.png"
                   alt="Arrow"
@@ -154,14 +154,14 @@ export default function Contact() {
         <section className="px-4 bg-background" style={{ paddingTop: '26px', paddingBottom: '96px' }}>
           <div className="max-w-5xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-3xl md:text-4xl font-normal mb-4 font-geist" style={{ color: '#3266cc', fontWeight: '500' }}>
+              <h2 className="text-3xl md:text-4xl mb-4" style={{ color: '#3266cc', fontFamily: '"Manrope", sans-serif', fontWeight: '600' }}>
                 Frequently Asked Questions
               </h2>
               <p className="text-gray-600 text-lg font-geist">
                 Find answers to common questions about Omkar Electricals Services
               </p>
             </div>
-            <div className="max-w-3xl mx-auto">
+            <div className="max-w-3xl mx-auto space-y-4" style={{ fontFamily: '"Inter", sans-serif' }}>
               <FAQAccordion items={faqItems} />
             </div>
           </div>
