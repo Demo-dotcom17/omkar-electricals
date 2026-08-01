@@ -125,7 +125,7 @@ export default function Home() {
         </section>
 
         {/* We Care Section */}
-        <section className="px-4 bg-background" style={{ paddingTop: '66px', paddingBottom: '96px' }}>
+        <section className="px-4" style={{ backgroundColor: '#ffffff', paddingTop: '66px', paddingBottom: '96px' }}>
           <div className="max-w-5xl mx-auto">
             <div className="flex flex-col items-center justify-center">
               <img
@@ -140,7 +140,7 @@ export default function Home() {
                   color: '#4B5563',
                   fontFamily: '"Geist", sans-serif',
                   fontWeight: 500,
-                  fontSize: '16px',
+                  fontSize: '20px',
                   marginTop: '24px'
                 }}
               >
