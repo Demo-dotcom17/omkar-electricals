@@ -120,15 +120,16 @@ export default function CareersPage() {
       <Header />
       <main className="min-h-screen bg-background">
         {/* Hero Section */}
-        <section className="bg-foreground text-white py-16 md:py-24 px-4">
+        <section className="text-white py-16 md:py-24 px-4" style={{ backgroundColor: 'rgb(18, 79, 198)' }}>
           <div className="max-w-7xl mx-auto text-center">
-            <h1 className="text-3xl md:text-4xl font-medium mb-6 font-geist">Build Your Career With Us</h1>
-            <p className="text-base md:text-lg text-gray-300 mb-8 max-w-3xl mx-auto font-inter">
+            <h1 className="text-3xl md:text-4xl font-medium mb-6" style={{ fontFamily: '"Manrope", sans-serif' }}>Build Your Career With Us</h1>
+            <p className="text-base md:text-lg mb-8 max-w-3xl mx-auto font-inter" style={{ color: 'rgb(255, 255, 255)' }}>
               Join Omkar Electricals Co. and become part of a team that&apos;s revolutionizing the electrical industry with innovation, safety, and excellence.
             </p>
             <a
               href="#positions"
-              className="inline-block bg-blue-500 text-white px-8 py-3 rounded font-medium hover:bg-blue-600 transition font-inter"
+              className="inline-block px-8 py-3 rounded font-medium transition font-inter"
+              style={{ backgroundColor: 'rgb(255, 255, 255)', color: 'rgb(18, 79, 198)' }}
             >
               Explore Positions
             </a>
@@ -203,7 +204,7 @@ export default function CareersPage() {
         </section>
 
         {/* Application Timeline Section */}
-        <section className="py-12 md:py-16 px-4 bg-white">
+        <section className="py-12 md:py-16 px-4" style={{ backgroundColor: '#d9dbdd' }}>
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-medium text-center mb-12 font-geist">Application Process</h2>
             <div className="max-w-3xl mx-auto">
@@ -221,7 +222,7 @@ export default function CareersPage() {
         </section>
 
         {/* Apprenticeship Section */}
-        <section className="py-12 md:py-16 px-4 bg-white">
+        <section className="py-12 md:py-16 px-4" style={{ backgroundColor: '#f9e75c', borderColor: '#d7cb40' }}>
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
@@ -231,12 +232,12 @@ export default function CareersPage() {
                   className="w-[600px] h-auto rounded-lg"
                 />
               </div>
-              <div>
-                <h2 className="text-2xl md:text-3xl font-medium mb-6 font-geist">Apprenticeship Program</h2>
-                <p className="mb-6 font-geist" style={{ fontSize: '17px', color: '#005ee1', textAlign: 'justify' }}>
+              <div className="space-y-4 font-geist" style={{ fontFamily: '"Manrope", sans-serif' }}>
+                <h2 className="text-2xl md:text-3xl font-medium mb-6" style={{ fontFamily: '"Manrope", sans-serif' }}>Apprenticeship Program</h2>
+                <p className="mb-6" style={{ fontSize: '17px', color: '#005ee1', textAlign: 'justify', fontFamily: '"Manrope", sans-serif' }}>
                   Our structured apprenticeship program is designed to teach you the electrical trade from the ground up. Learn from industry experts while earning and gaining practical experience along with professional experience letter with Govt. stamp.
                 </p>
-                <ul className="space-y-3 mb-8 font-geist">
+                <ul className="space-y-3 mb-8">
                   <li className="flex items-center gap-3 text-gray-700 font-inter">
                     <span className="text-blue-500 font-bold">✓</span> Comprehensive training curriculum
                   </li>
@@ -255,7 +256,8 @@ export default function CareersPage() {
                 </ul>
                 <Link
                   href="#positions"
-                  className="inline-block bg-blue-500 text-white px-8 py-3 rounded font-medium hover:bg-blue-600 transition font-inter"
+                  className="inline-block px-8 py-3 rounded font-medium transition font-inter"
+                  style={{ backgroundColor: 'rgb(18, 79, 198)', color: 'white' }}
                 >
                   Apply for Apprenticeship
                 </Link>
@@ -300,15 +302,16 @@ export default function CareersPage() {
         </section>
 
         {/* Final CTA Section */}
-        <section className="bg-blue-500 text-white py-12 md:py-16 px-4">
+        <section className="text-white py-12 md:py-16 px-4" style={{ backgroundColor: 'rgb(18, 79, 198)' }}>
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-medium mb-6 font-geist">Ready to Start Your Journey?</h2>
+            <h2 className="text-3xl md:text-4xl font-medium mb-6" style={{ fontFamily: '"Manrope", sans-serif' }}>Ready to Start Your Journey?</h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto font-inter">
               Submit your application today and join a team of dedicated professionals building the future of electrical solutions.
             </p>
             <a
               href="#positions"
-              className="inline-block bg-white text-blue-500 px-8 py-3 rounded font-medium hover:bg-gray-100 transition font-inter"
+              className="inline-block px-8 py-3 rounded font-medium transition font-inter"
+              style={{ backgroundColor: 'white', color: 'rgb(18, 79, 198)' }}
             >
               Browse Open Positions
             </a>
