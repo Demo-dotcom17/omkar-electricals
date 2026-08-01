@@ -59,7 +59,7 @@ export function BrandCarousel() {
       <div className="max-w-9xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-3 font-geist">
+          <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-3" style={{ fontFamily: '"Manrope", sans-serif' }}>
             Trusted Brands & Partners
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto font-geist">

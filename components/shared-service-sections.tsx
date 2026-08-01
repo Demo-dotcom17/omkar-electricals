@@ -64,7 +64,7 @@ export function SharedServiceSections({ showAdditionalServices = false }: Shared
       <BrandCarousel />
 
       {/* Why Choose Us */}
-      <section className="py-16 md:py-24 px-4 bg-white">
+      <section className="py-16 md:py-24 px-4" style={{ backgroundColor: '#ffcd45' }}>
         <div className="max-w-7xl mx-auto">
           <h2 className="text-2xl md:text-3xl font-medium text-foreground mb-12 text-center font-geist">
             Why Choose Omkar Electricals?
@@ -91,7 +91,7 @@ export function SharedServiceSections({ showAdditionalServices = false }: Shared
             ].map((item) => (
               <div key={item.title} className="border-l-4 border-accent pl-6">
                 <h3 className="text-xl font-semibold text-foreground mb-2">{item.title}</h3>
-                <p className="text-gray-600">{item.description}</p>
+                <p style={{ color: 'rgb(26, 26, 26)' }}>{item.description}</p>
               </div>
             ))}
           </div>
@@ -101,7 +101,7 @@ export function SharedServiceSections({ showAdditionalServices = false }: Shared
       {/* CTA Section */}
       <section className="bg-foreground text-white py-16 md:py-20 px-4">
         <div className="max-w-7xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-medium mb-6 font-geist">
+          <h2 className="text-3xl md:text-4xl font-medium mb-6" style={{ fontFamily: '"Manrope", sans-serif' }}>
             Ready to Get Started?
           </h2>
           <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto font-geist">

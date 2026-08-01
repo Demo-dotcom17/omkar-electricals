@@ -75,7 +75,7 @@ export default function About() {
                     className="object-contain"
                   />
                 </div>
-                <h3 className="text-2xl font-medium text-foreground mb-4 font-geist">Our Vision</h3>
+                <h3 className="font-medium text-foreground mb-4 font-geist" style={{ fontSize: '36px' }}>Our Vision</h3>
                 <p className="text-gray-700 leading-relaxed font-geist">
                   To be the most respected sustainable design consultancy company for our clients and employees that embark on an everlasting legacy through sustainable design solutions and implementations.
                 </p>
@@ -91,7 +91,7 @@ export default function About() {
                     className="object-contain"
                   />
                 </div>
-                <h3 className="text-2xl font-medium text-foreground mb-4 font-geist">Our Mission</h3>
+                <h3 className="font-medium text-foreground mb-4" style={{ fontFamily: '"Geist", sans-serif', fontSize: '36px' }}>Our Mission</h3>
                 <p className="text-gray-700 leading-relaxed font-geist">
                   Our consultancy serves clients with high standards of honesty, integrity, competence and objectivity. We work with the end in mind and strong ethics. We discourage any commissions, remuneration, or other benefits from any third party in connection with the recommendations to our clients. Respecting the individual&apos;s space and responsibility for balancing personal and professional life.
                 </p>
@@ -116,7 +116,7 @@ export default function About() {
 
               {/* Values Content */}
               <div className="font-geist text-justify">
-                <h2 className="text-2xl md:text-3xl font-medium mb-8" style={{ fontFamily: '"Manrope", sans-serif', fontWeight: 700, fontSize: '36px', color: 'rgb(26, 26, 26)' }}>Values</h2>
+                <h2 className="text-2xl md:text-3xl font-medium mb-8" style={{ fontFamily: '"Manrope", sans-serif', fontWeight: 600, fontSize: '36px', color: 'rgb(26, 26, 26)' }}>Values</h2>
 
                 <ul className="space-y-4" style={{ fontSize: '17px' }}>
                   {[
