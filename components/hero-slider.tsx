@@ -134,7 +134,7 @@ export function HeroSlider() {
                       style={{ 
                         fontFamily: '"Manrope", sans-serif',
                         fontWeight: 500,
-                        fontSize: '72px'
+                        fontSize: '60px'
                       }}
                     >
                       Powering Your World
@@ -149,7 +149,7 @@ export function HeroSlider() {
 
                     <p 
                       className="text-base md:text-lg text-gray-200 leading-relaxed"
-                      style={{ textAlign: 'justify' }}
+                      style={{ textAlign: 'center' }}
                     >
                       Delivering trusted electrical contracting services across Maharashtra since 2001. We specialize in residential, commercial, industrial, government, and infrastructure electrical projects with a commitment to safety, quality, and timely execution.
                     </p>
@@ -158,13 +158,15 @@ export function HeroSlider() {
                     <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center">
                       <Link
                         href="/contact"
-                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105 text-center"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
+                        style={{ fontWeight: 500 }}
                       >
                         Get a Quote
                       </Link>
                       <Link
                         href="/services"
-                        className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105 text-center"
+                        className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
+                        style={{ fontWeight: 500 }}
                       >
                         Explore Services
                       </Link>
