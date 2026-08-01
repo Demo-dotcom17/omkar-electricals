@@ -31,18 +31,27 @@ export default function Home() {
         <HeroSlider />
 
         {/* About Section */}
-        <section className="py-16 md:py-24 px-4">
+        <section className="py-16 md:py-24 px-4" style={{ backgroundColor: '#124fc6' }}>
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               {/* Left text */}
               <div className="font-geist">
-                <h2 className="text-3xl md:text-4xl font-semibold text-foreground mb-6 font-geist">
-                  <span className="text-accent">Omkar</span> Electricals
+                <h2 
+                  className="text-3xl md:text-4xl font-semibold mb-6 font-geist"
+                  style={{ color: 'rgb(255, 255, 255)', fontFamily: '"Manrope", sans-serif' }}
+                >
+                  <span style={{ color: '#e5e8ed' }}>Omkar</span> Electricals
                 </h2>
-                <p className="text-gray-700 mb-4 leading-relaxed text-justify">
+                <p 
+                  className="mb-4 leading-relaxed text-justify"
+                  style={{ color: 'rgb(255, 255, 255)', fontFamily: '"Geist", sans-serif' }}
+                >
                   is one of the top Government License Electrical Contractor and Electrical Service Provider company headed by Mr. Anil Ambekar. The company has been in this field for carrying out extensively all types of electrification works. in Maharashtra since 2001 because we are happy to be connected with some of the most prestigious electrical projects in the state. With a group of highly skilled and knowledgeable experts who are on board and completely comprehend your needs. Electrical cable laying, concealed wiring, casing wiring, industrial wiring, residential wiring, turnkey electrical projects, maintenance and installation, among other electrical services, are just a few of the many electrical services we provide in Maharashtra.
                 </p>
-                <p className="text-gray-700 leading-relaxed text-justify">
+                <p 
+                  className="leading-relaxed text-justify"
+                  style={{ color: '#ffffff' }}
+                >
                   For any kind of property, electrical wiring is crucial. You cannot afford to be lax in this situation. To ensure that quality is never compromised, we take all necessary safety precautions. We are one of Maharashtra&apos;s most dependable electrical contractors because of this. Our network is incredibly robust and provides power services in Maharashtra that are unmatched. So don&apos;t hesitate to look for a contractor who handles jobs like cover wiring, industrial wiring, etc. You are already in the proper location. Maharashtra has a large number of electrical contractors, but we stand out from the crowd since we are superior to them.
                 </p>
               </div>

@@ -1,6 +1,6 @@
 import { Analytics } from '@vercel/analytics/next'
 import type { Metadata, Viewport } from 'next'
-import { Geist, Inter, Roboto } from 'next/font/google'
+import { Geist, Inter, Roboto, Lato, Playfair_Display, Manrope } from 'next/font/google'
 import { Quicksand } from 'next/font/google'
 import './globals.css'
 
@@ -8,8 +8,11 @@ const geist = Geist({ subsets: ['latin'], variable: '--font-geist' })
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' })
 const quicksand = Quicksand({ subsets: ['latin'], variable: '--font-quicksand' })
 const roboto = Roboto({ weight: ['400', '600', '700'], subsets: ['latin'], variable: '--font-roboto' })
+const lato = Lato({ weight: ['400', '700'], subsets: ['latin'], variable: '--font-lato' })
+const playfairDisplay = Playfair_Display({ subsets: ['latin'], variable: '--font-playfair-display' })
+const manrope = Manrope({ subsets: ['latin'], variable: '--font-manrope' })
 
-const fontClassName = `${geist.variable} ${inter.variable} ${quicksand.variable} ${roboto.variable}`
+const fontClassName = `${geist.variable} ${inter.variable} ${quicksand.variable} ${roboto.variable} ${lato.variable} ${playfairDisplay.variable} ${manrope.variable}`
 
 export const metadata: Metadata = {
   title: 'Omkar Electricals - Professional Electrical Services',

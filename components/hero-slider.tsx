@@ -132,7 +132,7 @@ export function HeroSlider() {
                     <h1 
                       className="text-4xl md:text-5xl leading-tight"
                       style={{ 
-                        fontFamily: '"Geist", sans-serif',
+                        fontFamily: '"Manrope", sans-serif',
                         fontWeight: 500,
                         fontSize: '72px'
                       }}
