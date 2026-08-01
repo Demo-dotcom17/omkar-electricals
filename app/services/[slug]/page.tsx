@@ -41,12 +41,12 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="bg-background py-12 md:py-20 px-4">
-          <div className="max-w-7xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-6 font-geist">
+        <section className="py-12 md:py-20 px-4" style={{ backgroundColor: 'rgb(18, 79, 198)' }}>
+          <div className="max-w-7xl mx-auto" style={{ color: 'rgb(255, 255, 255)' }}>
+            <h1 className="text-3xl md:text-4xl font-semibold mb-6" style={{ color: 'rgb(255, 255, 255)', fontFamily: '"Manrope", sans-serif' }}>
               {service.title}
             </h1>
-            <p className="max-w-2xl font-geist" style={{ fontSize: '17px', color: '#2c3036', textAlign: 'justify' }}>
+            <p className="max-w-2xl font-geist" style={{ fontSize: '17px', color: 'rgb(255, 255, 255)', textAlign: 'justify' }}>
               {service.intro}
             </p>
           </div>
