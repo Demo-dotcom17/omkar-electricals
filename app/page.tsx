@@ -125,7 +125,7 @@ export default function Home() {
         </section>
 
         {/* We Care Section */}
-        <section className="px-4 bg-background" style={{ paddingTop: '66px', paddingBottom: '96px' }}>
+        <section className="px-4 bg-background" style={{ backgroundColor: '#ffffff', paddingTop: '66px', paddingBottom: '96px' }}>
           <div className="max-w-5xl mx-auto">
             <div className="flex flex-col items-center justify-center">
               <img
@@ -137,10 +137,10 @@ export default function Home() {
                 className="text-center leading-relaxed"
                 style={{
                   maxWidth: '700px',
-                  color: '#4B5563',
-                  fontFamily: '"Geist", sans-serif',
-                  fontWeight: 500,
-                  fontSize: '16px',
+                  color: 'rgb(50, 102, 204)',
+                  fontFamily: '"Inter", sans-serif',
+                  fontWeight: 600,
+                  fontSize: '18px',
                   marginTop: '24px'
                 }}
               >
@@ -153,7 +153,7 @@ export default function Home() {
         {/* CTA Section */}
         <section className="bg-foreground text-white py-16 md:py-20 px-4">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-medium mb-6 font-geist">
+            <h2 className="text-3xl md:text-4xl font-medium mb-6 font-geist" style={{ fontSize: '30px' }}>
               Need Professional Electrical Services?
             </h2>
             <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto font-geist">
