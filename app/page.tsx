@@ -72,7 +72,7 @@ export default function Home() {
         {/* Services Preview */}
         <section className="bg-secondary px-4" style={{ paddingTop: '76px', paddingBottom: '96px' }}>
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-semibold text-center text-foreground mb-4 font-geist">
+            <h2 className="text-3xl md:text-4xl font-semibold text-center text-foreground mb-4" style={{ fontFamily: '"Manrope", sans-serif' }}>
               Our Services
             </h2>
             <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto font-inter">
@@ -138,7 +138,7 @@ export default function Home() {
                 style={{
                   maxWidth: '900px',
                   color: 'rgb(50, 102, 204)',
-                  fontFamily: '"Inter", sans-serif',
+                  fontFamily: '"Manrope", sans-serif',
                   fontWeight: 600,
                   fontSize: '18px',
                   marginTop: '24px'
@@ -153,7 +153,7 @@ export default function Home() {
         {/* CTA Section */}
         <section className="bg-foreground text-white py-16 md:py-20 px-4">
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-medium mb-6 font-geist" style={{ fontSize: '30px' }}>
+            <h2 className="text-3xl md:text-4xl font-medium mb-6" style={{ fontSize: '30px', fontFamily: '"Manrope", sans-serif' }}>
               Need Professional Electrical Services?
             </h2>
             <p className="text-gray-300 mb-8 text-lg max-w-2xl mx-auto font-geist">
