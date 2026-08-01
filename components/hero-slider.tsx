@@ -158,8 +158,8 @@ export function HeroSlider() {
                     <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center">
                       <Link
                         href="/contact"
-                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
-                        style={{ fontWeight: 500 }}
+                        className="inline-block hover:bg-blue-700 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
+                        style={{ fontWeight: 500, backgroundColor: 'rgb(50, 102, 204)' }}
                       >
                         Get a Quote
                       </Link>
