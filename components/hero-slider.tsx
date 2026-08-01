@@ -141,8 +141,8 @@ export function HeroSlider() {
                     </h1>
 
                     <p 
-                      className="text-lg md:text-xl font-medium text-blue-300"
-                      style={{ fontFamily: '"Geist", sans-serif' }}
+                      className="font-medium text-blue-300"
+                      style={{ fontFamily: '"Geist", sans-serif', fontSize: '22px' }}
                     >
                       Government Licensed Electrical Contractors
                     </p>
@@ -159,7 +159,7 @@ export function HeroSlider() {
                       <Link
                         href="/contact"
                         className="inline-block hover:bg-blue-700 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
-                        style={{ fontWeight: 500, backgroundColor: 'rgb(50, 102, 204)' }}
+                        style={{ fontWeight: 500, backgroundColor: 'rgb(18, 79, 198)' }}
                       >
                         Get a Quote
                       </Link>

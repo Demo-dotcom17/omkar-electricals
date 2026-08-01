@@ -116,7 +116,8 @@ export default function Home() {
             <div className="text-center">
               <Link
                 href="/contact"
-                className="inline-block bg-accent text-accent-foreground px-8 py-3 rounded font-medium hover:opacity-90 transition font-inter"
+                className="inline-block text-accent-foreground px-8 py-3 rounded font-medium hover:opacity-90 transition font-inter"
+                style={{ backgroundColor: 'rgb(18, 79, 198)' }}
               >
                 Contact Now
               </Link>
@@ -137,10 +138,10 @@ export default function Home() {
                 className="text-center leading-relaxed"
                 style={{
                   maxWidth: '900px',
-                  color: 'rgb(50, 102, 204)',
+                  color: 'rgb(18, 79, 198)',
                   fontFamily: '"Manrope", sans-serif',
                   fontWeight: 600,
-                  fontSize: '18px',
+                  fontSize: '19px',
                   marginTop: '24px'
                 }}
               >
