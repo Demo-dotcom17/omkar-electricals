@@ -11,8 +11,8 @@ export function Header() {
   return (
     <header className="bg-white border-b border-border">
       {/* Main navigation */}
-      <nav className="px-4 font-inter" style={{ paddingTop: '5px', paddingBottom: '5px' }}>
-        <div className="max-w-7xl mx-auto flex items-center justify-between">
+      <nav className="px-4" style={{ paddingTop: '5px', paddingBottom: '5px', fontFamily: '"Inter", sans-serif' }}>
+        <div className="max-w-7xl mx-auto flex items-center justify-between" style={{ fontFamily: '"Inter", sans-serif' }}>
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <img src="/omkar-logo-new.png" alt="Omkar Electricals" className="h-14 w-auto" />
@@ -81,7 +81,8 @@ export function Header() {
           <div className="hidden md:block">
             <Link
               href="/contact"
-              className="bg-accent text-accent-foreground px-6 py-2 rounded font-normal hover:opacity-90 transition"
+              className="text-accent-foreground px-6 py-2 rounded font-normal hover:opacity-90 transition"
+              style={{ backgroundColor: 'rgb(18, 79, 198)' }}
             >
               Contact
             </Link>
