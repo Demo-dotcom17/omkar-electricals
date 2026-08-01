@@ -4,6 +4,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { Header } from '@/components/header'
 import { Footer } from '@/components/footer'
+import { HeroSlider } from '@/components/hero-slider'
 
 export default function Home() {
   const handleBrochureDownload = async () => {
@@ -26,44 +27,8 @@ export default function Home() {
     <>
       <Header />
       <main>
-        {/* Hero Section */}
-        <section className="bg-background">
-          <div className="max-w-7xl mx-auto px-4 py-12 md:py-20">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
-              {/* Left content */}
-              <div>
-                <p className="text-accent font-bold text-sm md:text-base mb-4 font-inter">
-                  WELCOME TO OMKAR ELECTRICALS
-                </p>
-                <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-6 leading-tight font-inter">
-                  Government Licensed Electrical Contractors
-                </h1>
-                <p className="text-gray-600 text-base leading-relaxed mb-8 text-justify font-geist">
-                  In Maharashtra, most individuals confuse an electrician with an electrical contractor since they do not know the essential distinctions between them. However, both positions are different from one another and might be regarded as electricians employed by electrical contractors in Maharashtra.
-                </p>
-                <Link
-                  href="/about"
-                  className="inline-block bg-accent text-accent-foreground px-6 py-3 rounded font-medium hover:opacity-90 transition font-inter text-sm"
-                >
-                  ABOUT US
-                </Link>
-              </div>
-
-              {/* Right image */}
-              <div className="relative">
-                <div className="relative h-96 md:h-[500px] w-full">
-                  <Image
-                    src="/contractor-working.jpeg"
-                    alt="Professional electrician working on electrical panel"
-                    fill
-                    className="object-cover rounded-lg"
-                    priority
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+        {/* Premium Hero Slider */}
+        <HeroSlider />
 
         {/* About Section */}
         <section className="py-16 md:py-24 px-4">
