@@ -98,7 +98,7 @@ export default function AreaOfWork() {
             <h1 className="text-3xl md:text-4xl font-semibold mb-6" style={{ color: 'rgb(255, 255, 255)', fontFamily: '"Manrope", sans-serif' }}>
               Area of <span style={{ color: 'rgb(255, 255, 255)' }}>Work</span>
             </h1>
-            <p className="text-lg max-w-8xl font-geist" style={{ color: 'rgb(255, 255, 255)' }}>
+            <p className="max-w-8xl font-geist" style={{ color: 'rgb(255, 255, 255)', fontSize: '16px' }}>
               Our expertise spans across a wide range of sectors, where we have successfully completed numerous electrical projects for industrial facilities, banking institutions, commercial buildings, residential developments, hospitals, educational institutions, hospitality establishments, and real estate projects. We are committed to delivering safe, reliable, and high-quality electrical solutions that meet the highest industry standards.
             </p>
           </div>
@@ -109,10 +109,10 @@ export default function AreaOfWork() {
           <div className="max-w-7xl mx-auto">
             {sectors.map((sector) => (
               <div key={sector.name} className="mb-16 md:mb-24">
-                <h2 className="text-3xl md:text-4xl font-medium text-foreground mb-4 font-geist">
+                <h2 className="font-medium text-foreground mb-4 font-geist" style={{ fontSize: '34px' }}>
                   {sector.name}
                 </h2>
-                <p className="text-lg text-gray-700 mb-12 max-w-7xl font-geist">
+                <p className="text-gray-700 mb-12 max-w-7xl font-geist" style={{ fontSize: '16px' }}>
                   {sector.description}
                 </p>
 
