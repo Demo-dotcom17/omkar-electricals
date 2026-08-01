@@ -93,19 +93,19 @@ export default function AreaOfWork() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="bg-background py-12 px-4">
+        <section className="py-12 px-4" style={{ backgroundColor: 'rgb(18, 79, 198)' }}>
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-6 font-geist">
-              Area of <span className="text-accent">Work</span>
+            <h1 className="text-3xl md:text-4xl font-semibold mb-6" style={{ color: 'rgb(255, 255, 255)', fontFamily: '"Manrope", sans-serif' }}>
+              Area of <span style={{ color: 'rgb(255, 255, 255)' }}>Work</span>
             </h1>
-            <p className="text-lg text-gray-600 max-w-8xl font-geist">
+            <p className="text-lg max-w-8xl font-geist" style={{ color: 'rgb(255, 255, 255)' }}>
               Our expertise spans across a wide range of sectors, where we have successfully completed numerous electrical projects for industrial facilities, banking institutions, commercial buildings, residential developments, hospitals, educational institutions, hospitality establishments, and real estate projects. We are committed to delivering safe, reliable, and high-quality electrical solutions that meet the highest industry standards.
             </p>
           </div>
         </section>
 
         {/* Sectors Section */}
-        <section className="py-16 md:py-24 px-4">
+        <section className="py-16 md:py-24 px-4" style={{ paddingBottom: '6px' }}>
           <div className="max-w-7xl mx-auto">
             {sectors.map((sector) => (
               <div key={sector.name} className="mb-16 md:mb-24">
@@ -139,7 +139,7 @@ export default function AreaOfWork() {
         {/* Success Pie Chart Section */}
         <section className="py-12 md:py-16 px-4">
           <div className="max-w-7xl mx-auto">
-            <h2 className="text-2xl font-medium text-foreground mb-12 text-center font-geist">
+            <h2 className="text-2xl font-medium text-foreground mb-12 text-center" style={{ fontFamily: '"Manrope", sans-serif' }}>
               As of July 2026, <span className="text-accent">We Are Proudly Serving</span>
             </h2>
             <SuccessPieChart />
@@ -153,25 +153,25 @@ export default function AreaOfWork() {
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
                 {/* Stat 1 */}
                 <div className="text-center">
-                  <h3 className="text-5xl md:text-6xl font-medium mb-2 font-roboto" style={{ color: '#1F2937' }}>700+</h3>
+                  <h3 className="text-5xl md:text-6xl font-medium mb-2" style={{ color: '#1F2937', fontFamily: '"Manrope", sans-serif' }}>700+</h3>
                   <p className="text-lg md:text-xl font-inter" style={{ color: '#1F2937' }}>Happy Clients</p>
                 </div>
 
                 {/* Stat 2 */}
                 <div className="text-center">
-                  <h3 className="text-5xl md:text-6xl font-medium mb-2 font-roboto" style={{ color: '#1F2937' }}>255+</h3>
+                  <h3 className="text-5xl md:text-6xl font-medium mb-2" style={{ color: '#1F2937', fontFamily: '"Manrope", sans-serif' }}>255+</h3>
                   <p className="text-lg md:text-xl font-inter" style={{ color: '#1F2937' }}>Locations</p>
                 </div>
 
                 {/* Stat 3 */}
                 <div className="text-center">
-                  <h3 className="text-5xl md:text-6xl font-medium mb-2 font-roboto" style={{ color: '#1F2937' }}>970+</h3>
+                  <h3 className="text-5xl md:text-6xl font-medium mb-2" style={{ color: '#1F2937', fontFamily: '"Manrope", sans-serif' }}>970+</h3>
                   <p className="text-lg md:text-xl font-inter" style={{ color: '#1F2937' }}>Projects</p>
                 </div>
 
                 {/* Stat 4 */}
                 <div className="text-center">
-                  <h3 className="text-5xl md:text-6xl font-medium mb-2 font-roboto" style={{ color: '#1F2937' }}>45+</h3>
+                  <h3 className="text-5xl md:text-6xl font-medium mb-2" style={{ color: '#1F2937', fontFamily: '"Manrope", sans-serif' }}>45+</h3>
                   <p className="text-lg md:text-xl font-inter" style={{ color: '#1F2937' }}>Professionals</p>
                 </div>
               </div>
@@ -180,9 +180,9 @@ export default function AreaOfWork() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-accent text-white py-12 md:py-16 px-4">
+        <section className="bg-accent text-white px-4" style={{ paddingTop: '3px', paddingBottom: '3px' }}>
           <div className="max-w-7xl mx-auto text-center">
-            <h2 className="text-3xl md:text-4xl font-medium mb-6 font-geist">
+            <h2 className="text-3xl md:text-4xl font-medium mb-6" style={{ fontFamily: '"Manrope", sans-serif' }}>
               Ready to Work With Us?
             </h2>
             <p className="text-lg mb-8 max-w-2xl mx-auto font-geist">
