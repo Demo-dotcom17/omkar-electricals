@@ -13,21 +13,21 @@ export default function About() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="bg-background py-12 md:py-20 px-4">
+        <section className="py-12 md:py-20 px-4" style={{ backgroundColor: 'rgb(18, 79, 198)' }}>
           <div className="max-w-7xl mx-auto">
-            <p className="text-accent font-bold text-sm md:text-base mb-4 font-geist">WHO WE ARE?</p>
-            <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-6 font-geist">
-              Want to Know a little <span className="text-accent">About us?</span>
+            <p className="font-bold text-sm md:text-base mb-4 font-geist" style={{ color: 'rgb(255, 255, 255)', fontFamily: '"Manrope", sans-serif' }}>WHO WE ARE?</p>
+            <h1 className="text-3xl md:text-4xl font-semibold mb-6" style={{ color: 'rgb(245, 241, 235)', fontFamily: '"Manrope", sans-serif' }}>
+              Want to Know a little <span style={{ color: 'rgb(255, 255, 255)', fontWeight: 700 }}>About us?</span>
             </h1>
-            <p className="text-2xl md:text-3xl text-foreground font-normal mb-8 font-geist">Let us tell you.</p>
+            <p className="text-2xl md:text-3xl font-normal mb-8" style={{ color: 'rgb(245, 241, 235)' }}>Let us tell you.</p>
 
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               <div>
-                <p className="text-gray-1000 leading-relaxed mb-4 font-geist text-justify">
+                <p className="leading-relaxed mb-4 font-geist text-justify" style={{ color: 'rgb(255, 255, 255)' }}>
                   Omkar Electricals is a trusted government licensed electrical contracting and services company, delivering comprehensive electrical solutions across residential, commercial, industrial, and institutional sectors since 2001. Backed by a skilled and dedicated workforce, we are committed to exceeding client expectations by providing reliable, energy-efficient, and safe electrical systems. Our focus on quality, sustainability, innovation, and compliance with the highest safety standards enables us to create efficient and future-ready infrastructure for every project.
                 </p>
               </div>
-              <div className="relative h-80 md:h-96 w-full flex items-center justify-center bg-background rounded-lg">
+              <div className="relative h-80 md:h-96 w-full flex items-center justify-center rounded-lg" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
                 <Image
                   src="/omkar-logo-new.png"
                   alt="Omkar Electricals Logo"
