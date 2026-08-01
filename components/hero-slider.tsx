@@ -116,41 +116,55 @@ export function HeroSlider() {
             />
             <div className="absolute inset-0 bg-black/50" />
 
-            {/* Content - Full Width, Left Aligned */}
-            <div className="relative h-full flex items-center">
-              <div className="max-w-7xl mx-auto px-4 md:px-8 w-full">
-                {/* Left Content Only */}
+            {/* Content - Centered Horizontally and Vertically */}
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="w-full px-4 md:px-8">
+                {/* Centered Content Container */}
                 <div
-                  className={`text-white transition-all duration-700 max-w-2xl ${
+                  className={`text-white transition-all duration-700 max-w-4xl mx-auto text-center ${
                     index === currentSlide
-                      ? 'opacity-100 translate-x-0'
-                      : 'opacity-0 -translate-x-8'
+                      ? 'opacity-100 scale-100'
+                      : 'opacity-0 scale-95'
                   }`}
+                  style={{ fontFamily: '"Geist", sans-serif' }}
                 >
-                  <div className="space-y-6">
-                    <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+                  <div className="space-y-6" style={{ fontFamily: '"Geist", sans-serif' }}>
+                    <h1 
+                      className="text-4xl md:text-5xl leading-tight"
+                      style={{ 
+                        fontFamily: '"Manrope", sans-serif',
+                        fontWeight: 500,
+                        fontSize: '72px'
+                      }}
+                    >
                       Powering Your World
                     </h1>
 
-                    <p className="text-lg md:text-xl font-medium text-blue-300">
+                    <p 
+                      className="text-lg md:text-xl font-medium text-blue-300"
+                      style={{ fontFamily: '"Geist", sans-serif' }}
+                    >
                       Government Licensed Electrical Contractors
                     </p>
 
-                    <p className="text-base md:text-lg text-gray-200 leading-relaxed max-w-xl">
+                    <p 
+                      className="text-base md:text-lg text-gray-200 leading-relaxed"
+                      style={{ textAlign: 'justify' }}
+                    >
                       Delivering trusted electrical contracting services across Maharashtra since 2001. We specialize in residential, commercial, industrial, government, and infrastructure electrical projects with a commitment to safety, quality, and timely execution.
                     </p>
 
-                    {/* Buttons - Stack on mobile, side-by-side on desktop */}
-                    <div className="flex flex-col sm:flex-row gap-4 pt-6">
+                    {/* Centered Buttons - Stack on mobile, side-by-side on desktop */}
+                    <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center">
                       <Link
                         href="/contact"
-                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105 text-center sm:w-auto"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105 text-center"
                       >
                         Get a Quote
                       </Link>
                       <Link
                         href="/services"
-                        className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105 text-center sm:w-auto"
+                        className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105 text-center"
                       >
                         Explore Services
                       </Link>
