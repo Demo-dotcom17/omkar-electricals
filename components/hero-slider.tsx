@@ -116,15 +116,15 @@ export function HeroSlider() {
             />
             <div className="absolute inset-0 bg-black/50" />
 
-            {/* Content - Vertically Centered, Left Aligned */}
-            <div className="absolute inset-0 flex items-center justify-start">
+            {/* Content - Centered Horizontally and Vertically */}
+            <div className="absolute inset-0 flex items-center justify-center">
               <div className="w-full px-4 md:px-8">
-                {/* Left Content Only */}
+                {/* Centered Content Container */}
                 <div
-                  className={`text-white transition-all duration-700 max-w-[650px] ${
+                  className={`text-white transition-all duration-700 max-w-4xl mx-auto text-center ${
                     index === currentSlide
-                      ? 'opacity-100 translate-x-0'
-                      : 'opacity-0 -translate-x-8'
+                      ? 'opacity-100 scale-100'
+                      : 'opacity-0 scale-95'
                   }`}
                 >
                   <div className="space-y-6">
@@ -140,17 +140,17 @@ export function HeroSlider() {
                       Delivering trusted electrical contracting services across Maharashtra since 2001. We specialize in residential, commercial, industrial, government, and infrastructure electrical projects with a commitment to safety, quality, and timely execution.
                     </p>
 
-                    {/* Buttons - Stack on mobile, side-by-side on desktop */}
-                    <div className="flex flex-col sm:flex-row gap-4 pt-6">
+                    {/* Centered Buttons - Stack on mobile, side-by-side on desktop */}
+                    <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center">
                       <Link
                         href="/contact"
-                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105 text-center sm:w-auto"
+                        className="inline-block bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105 text-center"
                       >
                         Get a Quote
                       </Link>
                       <Link
                         href="/services"
-                        className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105 text-center sm:w-auto"
+                        className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded font-semibold transition-all duration-300 transform hover:scale-105 text-center"
                       >
                         Explore Services
                       </Link>
