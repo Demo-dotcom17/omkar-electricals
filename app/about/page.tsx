@@ -17,7 +17,7 @@ export default function About() {
           <div className="max-w-7xl mx-auto">
             <p className="font-bold text-sm md:text-base mb-4 font-geist" style={{ color: 'rgb(255, 255, 255)', fontFamily: '"Manrope", sans-serif' }}>WHO WE ARE?</p>
             <h1 className="text-3xl md:text-4xl font-semibold mb-6" style={{ color: 'rgb(245, 241, 235)', fontFamily: '"Manrope", sans-serif' }}>
-              Want to Know a little <span style={{ color: 'rgb(255, 255, 255)', fontWeight: 700 }}>About us?</span>
+              Want to Know a little <span style={{ color: 'rgb(255, 255, 255)', fontWeight: 600 }}>About us?</span>
             </h1>
             <p className="text-2xl md:text-3xl font-normal mb-8" style={{ color: 'rgb(245, 241, 235)' }}>Let us tell you.</p>
 
@@ -27,7 +27,7 @@ export default function About() {
                   Omkar Electricals is a trusted government licensed electrical contracting and services company, delivering comprehensive electrical solutions across residential, commercial, industrial, and institutional sectors since 2001. Backed by a skilled and dedicated workforce, we are committed to exceeding client expectations by providing reliable, energy-efficient, and safe electrical systems. Our focus on quality, sustainability, innovation, and compliance with the highest safety standards enables us to create efficient and future-ready infrastructure for every project.
                 </p>
               </div>
-              <div className="relative h-80 md:h-96 w-full flex items-center justify-center rounded-lg" style={{ backgroundColor: 'rgb(255, 255, 255)' }}>
+              <div className="relative h-80 md:h-96 w-full inline-flex items-center justify-center" style={{ backgroundColor: 'rgb(255, 255, 255)', gap: '0px', borderRadius: '0px' }}>
                 <Image
                   src="/omkar-logo-new.png"
                   alt="Omkar Electricals Logo"
@@ -62,7 +62,7 @@ export default function About() {
         </section>
 
         {/* Vision and Mission Section */}
-        <section className="py-16 md:py-24 px-4 bg-secondary">
+        <section className="px-4 bg-secondary" style={{ paddingTop: '56px', paddingBottom: '56px' }}>
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 mb-12">
               {/* Vision */}
@@ -116,9 +116,9 @@ export default function About() {
 
               {/* Values Content */}
               <div className="font-geist text-justify">
-                <h2 className="text-2xl md:text-3xl font-medium mb-8" style={{ fontFamily: '"Manrope", sans-serif', fontWeight: 700, color: 'rgb(26, 26, 26)' }}>Values</h2>
+                <h2 className="text-2xl md:text-3xl font-medium mb-8" style={{ fontFamily: '"Manrope", sans-serif', fontWeight: 700, fontSize: '36px', color: 'rgb(26, 26, 26)' }}>Values</h2>
 
-                <ul className="space-y-4">
+                <ul className="space-y-4" style={{ fontSize: '17px' }}>
                   {[
                     'Have business dealings conducted with the highest standards of honesty, integrity, competence, and objectivity.',
                     'Have high business ethics and discourage any commissions, remuneration, or other benefits from any third party in connection with the recommendations to our client.',
