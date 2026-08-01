@@ -36,19 +36,19 @@ export default function Home() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 items-center">
               {/* Left text */}
               <div className="font-geist">
-                <h2 
+                <h2
                   className="text-3xl md:text-4xl font-semibold mb-6 font-geist"
                   style={{ color: 'rgb(255, 255, 255)', fontFamily: '"Manrope", sans-serif' }}
                 >
                   <span style={{ color: '#e5e8ed' }}>Omkar</span> Electricals
                 </h2>
-                <p 
+                <p
                   className="mb-4 leading-relaxed text-justify"
                   style={{ color: 'rgb(255, 255, 255)', fontFamily: '"Geist", sans-serif' }}
                 >
                   is one of the top Government License Electrical Contractor and Electrical Service Provider company headed by Mr. Anil Ambekar. The company has been in this field for carrying out extensively all types of electrification works. in Maharashtra since 2001 because we are happy to be connected with some of the most prestigious electrical projects in the state. With a group of highly skilled and knowledgeable experts who are on board and completely comprehend your needs. Electrical cable laying, concealed wiring, casing wiring, industrial wiring, residential wiring, turnkey electrical projects, maintenance and installation, among other electrical services, are just a few of the many electrical services we provide in Maharashtra.
                 </p>
-                <p 
+                <p
                   className="leading-relaxed text-justify"
                   style={{ color: '#ffffff' }}
                 >
@@ -125,18 +125,18 @@ export default function Home() {
         </section>
 
         {/* We Care Section */}
-        <section className="px-4 bg-background" style={{ backgroundColor: '#ffffff', paddingTop: '66px', paddingBottom: '96px' }}>
-          <div className="max-w-5xl mx-auto">
+        <section className="px-4 bg-background" style={{ backgroundColor: '#ffffff', paddingTop: '26px', paddingBottom: '56px' }}>
+          <div className="max-w-7xl mx-auto">
             <div className="flex flex-col items-center justify-center">
               <img
                 src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2836%29-3EwS6qKeNkFBEJGkIG24XL4Rs7gmQK.png"
                 alt="We Care - Electrical services"
-                className="w-full max-w-3xl h-auto object-contain mb-8"
+                className="w-full max-w-4xl h-auto object-contain mb-8"
               />
-              <p 
+              <p
                 className="text-center leading-relaxed"
                 style={{
-                  maxWidth: '700px',
+                  maxWidth: '900px',
                   color: 'rgb(50, 102, 204)',
                   fontFamily: '"Inter", sans-serif',
                   fontWeight: 600,
@@ -144,7 +144,7 @@ export default function Home() {
                   marginTop: '24px'
                 }}
               >
-                Delivering safe, efficient, and future-ready electrical solutions for industrial, commercial, institutional, and residential projects.
+                Delivering safe, efficient, and future-ready electrical solutions for industrial, commercial, government, institutional, and residential projects.
               </p>
             </div>
           </div>
