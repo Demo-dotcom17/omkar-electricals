@@ -101,7 +101,7 @@ export default function About() {
         </section>
 
         {/* Values Section */}
-        <section className="py-16 md:py-24 px-4" style={{ backgroundColor: 'rgb(210, 171, 106)' }}>
+        <section className="py-16 md:py-24 px-4" style={{ backgroundColor: 'rgb(210, 171, 103)' }}>
           <div className="max-w-7xl mx-auto">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
               {/* Image */}
@@ -116,7 +116,7 @@ export default function About() {
 
               {/* Values Content */}
               <div className="font-geist text-justify">
-                <h2 className="text-2xl md:text-3xl font-medium mb-8" style={{ fontFamily: '"Manrope", sans-serif', fontWeight: 600, fontSize: '36px', color: 'rgb(26, 26, 26)' }}>Values</h2>
+                <h2 className="text-2xl md:text-3xl font-medium mb-8" style={{ fontFamily: '"Manrope", sans-serif', fontWeight: 700, fontSize: '36px', color: 'rgb(26, 26, 26)' }}>Values</h2>
 
                 <ul className="space-y-4" style={{ fontSize: '17px' }}>
                   {[
