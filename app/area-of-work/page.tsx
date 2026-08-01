@@ -105,7 +105,7 @@ export default function AreaOfWork() {
         </section>
 
         {/* Sectors Section */}
-        <section className="py-16 md:py-24 px-4" style={{ paddingBottom: '6px' }}>
+        <section className="py-16 md:py-24 px-4" style={{ paddingBottom: '0px' }}>
           <div className="max-w-7xl mx-auto">
             {sectors.map((sector) => (
               <div key={sector.name} className="mb-16 md:mb-24">
@@ -147,7 +147,7 @@ export default function AreaOfWork() {
         </section>
 
         {/* Statistics Section */}
-        <section className="py-12 md:py-16 px-4">
+        <section className="py-12 md:py-16 px-4" style={{ paddingTop: '34px' }}>
           <div className="max-w-7xl mx-auto">
             <div className="rounded-3xl px-6 md:px-10 py-8 md:py-10" style={{ backgroundColor: '#FFD957' }}>
               <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12">
@@ -180,7 +180,7 @@ export default function AreaOfWork() {
         </section>
 
         {/* CTA Section */}
-        <section className="bg-accent text-white px-4" style={{ paddingTop: '3px', paddingBottom: '3px' }}>
+        <section className="text-white px-4" style={{ paddingTop: '36px', paddingBottom: '36px', backgroundColor: 'rgb(18, 79, 198)' }}>
           <div className="max-w-7xl mx-auto text-center">
             <h2 className="text-3xl md:text-4xl font-medium mb-6" style={{ fontFamily: '"Manrope", sans-serif' }}>
               Ready to Work With Us?
