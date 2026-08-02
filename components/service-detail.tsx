@@ -1,3 +1,7 @@
+import React from 'react'
+import Image from 'next/image'
+import { FeatureCards } from './feature-cards'
+
 interface ServiceDetailProps {
   title: string
   intro: string
@@ -44,19 +48,9 @@ export function ServiceDetail({
                 {fullDescription}
               </p>
 
-              {/* Features */}
-              <div style={{ lineHeight: '1.4' }}>
-                <h3 className="text-lg font-semibold text-foreground mb-4 font-geist">
-                  What We Provide
-                </h3>
-                <ul className="grid grid-cols-1 md:grid-cols-2 gap-3" style={{ lineHeight: '1.25' }}>
-                  {features.map((feature, idx) => (
-                    <li key={feature} className={`gap-3 items-start font-geist ${idx === 2 ? 'inline-flex' : 'flex'}`} style={{ lineHeight: idx === 0 || idx === 1 || idx === 3 ? '1.25' : undefined }}>
-                      <span className="text-accent font-bold text-lg flex-shrink-0 mt-0.5">✓</span>
-                      <span className="text-base text-foreground" style={{ lineHeight: '1.2' }}>{feature}</span>
-                    </li>
-                  ))}
-                </ul>
+              {/* Features - Using modern card layout */}
+              <div className="pt-2">
+                <FeatureCards features={features} />
               </div>
 
               {/* CTA Button */}
