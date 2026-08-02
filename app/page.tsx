@@ -145,7 +145,7 @@ export default function Home() {
                   marginTop: '24px'
                 }}
               >
-                Delivering safe, efficient, and future-ready electrical solutions for industrial, commercial, government, institutional, and residential projects.
+                Delivering safe, efficient, and future - ready electrical solutions for industrial, commercial, government, institutional, and residential projects.
               </p>
             </div>
           </div>
