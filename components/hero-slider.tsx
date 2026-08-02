@@ -129,6 +129,7 @@ export function HeroSlider() {
               fill
               className="object-cover"
               priority={index === 0}
+              unoptimized={true}
             />
             <div className="absolute inset-0 bg-black/50" />
           </div>
