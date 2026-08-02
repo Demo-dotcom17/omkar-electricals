@@ -168,6 +168,7 @@ export function HeroSlider() {
               <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center">
                 <Link
                   href="/contact"
+                  prefetch={false}
                   className="inline-block hover:bg-blue-700 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
                   style={{ fontWeight: 500, backgroundColor: 'rgb(18, 79, 198)', fontFamily: '"Inter", sans-serif' }}
                 >
@@ -175,6 +176,7 @@ export function HeroSlider() {
                 </Link>
                 <Link
                   href="/services"
+                  prefetch={false}
                   className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
                   style={{ fontWeight: 500, fontFamily: '"Inter", sans-serif' }}
                 >
