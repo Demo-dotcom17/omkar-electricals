@@ -16,8 +16,8 @@ export function FeatureCards({ features, title = 'What We Provide' }: FeatureCar
         {features.map((feature) => (
           <div
             key={feature}
-            className="bg-white border border-gray-200 rounded-lg p-6 transition-all duration-300 hover:shadow-md hover:-translate-y-1 cursor-default"
-            style={{ borderColor: '#E5E7EB' }}
+            className="border rounded-2xl p-6 transition-all duration-300 hover:border-accent cursor-default"
+            style={{ borderColor: '#D1D5DB' }}
           >
             <div className="flex items-start gap-4">
               {/* Icon */}
