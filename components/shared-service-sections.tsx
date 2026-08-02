@@ -51,7 +51,7 @@ export function SharedServiceSections({ showAdditionalServices = false }: Shared
               },
             ].map((item) => (
               <div key={item.title} className="bg-white p-6 rounded-lg">
-                <h3 className="text-xl font-semibold text-foreground mb-3">{item.title}</h3>
+                <h3 className="text-xl text-foreground mb-3" style={{ fontWeight: '500' }}>{item.title}</h3>
                 <p className="text-gray-600">{item.description}</p>
               </div>
             ))}
