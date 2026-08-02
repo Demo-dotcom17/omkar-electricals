@@ -97,7 +97,7 @@ export function HeroSlider() {
       onTouchStart={handleTouchStart}
       onTouchEnd={handleTouchEnd}
     >
-      {/* Slides Container */}
+      {/* Slides Container - Only background images change */}
       <div className="relative h-full w-full">
         {slides.map((slide, index) => (
           <div
@@ -115,68 +115,64 @@ export function HeroSlider() {
               priority={index === 0}
             />
             <div className="absolute inset-0 bg-black/50" />
+          </div>
+        ))}
+      </div>
 
-            {/* Content - Centered Horizontally and Vertically */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-full px-4 md:px-8">
-                {/* Centered Content Container */}
-                <div
-                  className={`text-white transition-all duration-700 max-w-4xl mx-auto text-center ${
-                    index === currentSlide
-                      ? 'opacity-100 scale-100'
-                      : 'opacity-0 scale-95'
-                  }`}
-                  style={{ fontFamily: '"Geist", sans-serif' }}
+      {/* Static Content Overlay - Renders once and stays fixed */}
+      <div className="absolute inset-0 flex items-center justify-center z-10 pointer-events-none">
+        <div className="w-full px-4 md:px-8">
+          {/* Static Centered Content Container */}
+          <div
+            className="text-white max-w-4xl mx-auto text-center"
+            style={{ fontFamily: '"Geist", sans-serif', pointerEvents: 'auto' }}
+          >
+            <div className="space-y-6" style={{ fontFamily: '"Geist", sans-serif' }}>
+              <h1 
+                className="text-4xl md:text-5xl leading-tight"
+                style={{ 
+                  fontFamily: '"Manrope", sans-serif',
+                  fontWeight: 700,
+                  fontSize: '60px'
+                }}
+              >
+                Powering Your World
+              </h1>
+
+              <p 
+                className="font-medium text-blue-300"
+                style={{ fontFamily: '"Geist", sans-serif', fontSize: '22px' }}
+              >
+                Government Licensed Electrical Contractors
+              </p>
+
+              <p 
+                className="text-base md:text-lg text-gray-200 leading-relaxed"
+                style={{ textAlign: 'center' }}
+              >
+                Delivering trusted electrical contracting services across Maharashtra since 2001. We specialize in residential, commercial, industrial, government, and infrastructure electrical projects with a commitment to safety, quality, and timely execution.
+              </p>
+
+              {/* Static Buttons - Stack on mobile, side-by-side on desktop */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center">
+                <Link
+                  href="/contact"
+                  className="inline-block hover:bg-blue-700 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
+                  style={{ fontWeight: 500, backgroundColor: 'rgb(18, 79, 198)' }}
                 >
-                  <div className="space-y-6" style={{ fontFamily: '"Geist", sans-serif' }}>
-                    <h1 
-                      className="text-4xl md:text-5xl leading-tight"
-                      style={{ 
-                        fontFamily: '"Manrope", sans-serif',
-                        fontWeight: 700,
-                        fontSize: '60px'
-                      }}
-                    >
-                      Powering Your World
-                    </h1>
-
-                    <p 
-                      className="font-medium text-blue-300"
-                      style={{ fontFamily: '"Geist", sans-serif', fontSize: '22px' }}
-                    >
-                      Government Licensed Electrical Contractors
-                    </p>
-
-                    <p 
-                      className="text-base md:text-lg text-gray-200 leading-relaxed"
-                      style={{ textAlign: 'center' }}
-                    >
-                      Delivering trusted electrical contracting services across Maharashtra since 2001. We specialize in residential, commercial, industrial, government, and infrastructure electrical projects with a commitment to safety, quality, and timely execution.
-                    </p>
-
-                    {/* Centered Buttons - Stack on mobile, side-by-side on desktop */}
-                    <div className="flex flex-col sm:flex-row gap-4 pt-6 justify-center">
-                      <Link
-                        href="/contact"
-                        className="inline-block hover:bg-blue-700 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
-                        style={{ fontWeight: 500, backgroundColor: 'rgb(18, 79, 198)' }}
-                      >
-                        Get a Quote
-                      </Link>
-                      <Link
-                        href="/services"
-                        className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
-                        style={{ fontWeight: 500 }}
-                      >
-                        Explore Services
-                      </Link>
-                    </div>
-                  </div>
-                </div>
+                  Get a Quote
+                </Link>
+                <Link
+                  href="/services"
+                  className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
+                  style={{ fontWeight: 500 }}
+                >
+                  Explore Services
+                </Link>
               </div>
             </div>
           </div>
-        ))}
+        </div>
       </div>
 
       {/* Navigation Arrows */}
