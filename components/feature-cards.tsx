@@ -12,7 +12,7 @@ export function FeatureCards({ features, title = 'What We Provide' }: FeatureCar
         {title}
       </h3>
       
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" style={{ fontSize: '14px' }}>
         {features.map((feature) => (
           <div
             key={feature}
@@ -29,7 +29,7 @@ export function FeatureCards({ features, title = 'What We Provide' }: FeatureCar
               
               {/* Content */}
               <div className="flex-1">
-                <p className="text-base font-medium text-foreground leading-relaxed">
+                <p className="font-medium text-foreground leading-relaxed" style={{ fontSize: '14px', fontFamily: '"Inter", sans-serif' }}>
                   {feature}
                 </p>
               </div>
