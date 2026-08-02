@@ -107,7 +107,7 @@ export default function About() {
               {/* Image */}
               <div className="relative h-80 md:h-96 w-full rounded-lg overflow-hidden">
                 <Image
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-f5eWz4bLXtgsp6dzqDSJxSEmFLCO01.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2837%29-ndNTr6gHSk1IKOHF5ki1MwR2txMy1W.png"
                   alt="Our core values"
                   fill
                   className="object-contain"
