@@ -52,6 +52,41 @@ const slides: Slide[] = [
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gKRc2EJPjERdhXh3VdgUzMjwcZhynB.png',
     alt: 'Professional data center cabling infrastructure',
   },
+  {
+    id: 9,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-vYITaGTA4gN6Zi2xTpoZTmFpbBd1GJ.png',
+    alt: 'Thermal imaging diagnosis of industrial control system',
+  },
+  {
+    id: 10,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xVm5LGcFXGKJOolINs5UECI0sH5eZn.png',
+    alt: 'Fire protection sprinkler system installation',
+  },
+  {
+    id: 11,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OIdQ9Vr9mY6QeV5YBsUr2gtig5DjzW.png',
+    alt: 'Residential electrical wiring and socket installation',
+  },
+  {
+    id: 12,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pole-Mounted-Transformer.webp-6zENAUR2qQizI99uBA3YTEucnYHugi.jpeg',
+    alt: 'Pole-mounted transformer electrical infrastructure',
+  },
+  {
+    id: 13,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Standards-Compliant_Control_Panel_Design.jpg-OTciT5GVegUQEzjXwhVUuOqZn29ebe.jpeg',
+    alt: 'Standards-compliant control panel design with indicator lights',
+  },
+  {
+    id: 14,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bAY4gloL3IQTMT35MPXVlwCAo4yTHu.png',
+    alt: 'Security camera installation and mounting system',
+  },
+  {
+    id: 15,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QhdeN47XUDJU7nRBpbftAm4LvRJYHz.png',
+    alt: 'Electrician with multimeter testing electrical panel',
+  },
 ]
 
 export function HeroSlider() {
