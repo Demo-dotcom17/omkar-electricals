@@ -37,6 +37,16 @@ const slides: Slide[] = [
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OIdQ9Vr9mY6QeV5YBsUr2gtig5DjzW.png',
     alt: 'Residential electrical wiring and socket installation',
   },
+  {
+    id: 6,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pole-Mounted-Transformer.webp-6zENAUR2qQizI99uBA3YTEucnYHugi.jpeg',
+    alt: 'Pole-mounted transformer electrical infrastructure',
+  },
+  {
+    id: 7,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Standards-Compliant_Control_Panel_Design.jpg-OTciT5GVegUQEzjXwhVUuOqZn29ebe.jpeg',
+    alt: 'Standards-compliant control panel design with indicator lights',
+  },
 ]
 
 export function HeroSlider() {
@@ -91,7 +101,8 @@ export function HeroSlider() {
 
   return (
     <section
-      className="relative h-screen w-full overflow-hidden bg-black"
+      className="relative h-screen w-full overflow-hidden"
+      style={{ backgroundColor: 'rgb(245, 241, 235)' }}
       onMouseEnter={() => setIsAutoplay(false)}
       onMouseLeave={() => setIsAutoplay(true)}
       onTouchStart={handleTouchStart}
@@ -158,14 +169,14 @@ export function HeroSlider() {
                 <Link
                   href="/contact"
                   className="inline-block hover:bg-blue-700 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
-                  style={{ fontWeight: 500, backgroundColor: 'rgb(18, 79, 198)' }}
+                  style={{ fontWeight: 500, backgroundColor: 'rgb(18, 79, 198)', fontFamily: '"Inter", sans-serif' }}
                 >
                   Get a Quote
                 </Link>
                 <Link
                   href="/services"
                   className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
-                  style={{ fontWeight: 500 }}
+                  style={{ fontWeight: 500, fontFamily: '"Inter", sans-serif' }}
                 >
                   Explore Services
                 </Link>
