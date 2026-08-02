@@ -32,6 +32,12 @@ export function Footer() {
             </li>
             <li className="hidden md:inline">|</li>
             <li>
+              <Link href="/area-of-work" className="text-gray-300 hover:text-accent transition">
+                Work
+              </Link>
+            </li>
+            <li className="hidden md:inline">|</li>
+            <li>
               <Link href="/careers" className="text-gray-300 hover:text-accent transition">
                 Careers
               </Link>
