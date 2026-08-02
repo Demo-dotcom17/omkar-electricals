@@ -169,14 +169,14 @@ export function HeroSlider() {
                 <Link
                   href="/contact"
                   className="inline-block hover:bg-blue-700 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
-                  style={{ fontWeight: 500, backgroundColor: 'rgb(18, 79, 198)' }}
+                  style={{ fontWeight: 500, backgroundColor: 'rgb(18, 79, 198)', fontFamily: '"Inter", sans-serif' }}
                 >
                   Get a Quote
                 </Link>
                 <Link
                   href="/services"
                   className="inline-block bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded transition-all duration-300 transform hover:scale-105 text-center"
-                  style={{ fontWeight: 500 }}
+                  style={{ fontWeight: 500, fontFamily: '"Inter", sans-serif' }}
                 >
                   Explore Services
                 </Link>
