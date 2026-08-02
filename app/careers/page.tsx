@@ -227,7 +227,7 @@ export default function CareersPage() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
               <div>
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-glqgaNnv8MfKtHIb3fpHo4qd2gFrAv.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2839%29-QTG6rGrBroLRHygpGgwuRSC4uNiVud.png"
                   alt="Apprenticeship Program"
                   className="w-[600px] h-auto"
                   style={{ objectFit: 'contain', borderRadius: '0px' }}
@@ -293,7 +293,7 @@ export default function CareersPage() {
               </div>
               <div className="order-1 md:order-2">
                 <img
-                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-XbLqnCOrHVyIYguk8rlvMcuCxE0bn7.png"
+                  src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-removebg-preview%20%2838%29-yQBbysAdtr0Q5Abej3gkKNZRpTBIEE.png"
                   alt="Employment Opportunities"
                   className="w-full h-auto rounded-lg"
                 />
