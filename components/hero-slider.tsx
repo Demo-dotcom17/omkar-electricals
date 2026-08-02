@@ -37,6 +37,16 @@ const slides: Slide[] = [
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OIdQ9Vr9mY6QeV5YBsUr2gtig5DjzW.png',
     alt: 'Residential electrical wiring and socket installation',
   },
+  {
+    id: 6,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pole-Mounted-Transformer.webp-6zENAUR2qQizI99uBA3YTEucnYHugi.jpeg',
+    alt: 'Pole-mounted transformer electrical infrastructure',
+  },
+  {
+    id: 7,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Standards-Compliant_Control_Panel_Design.jpg-OTciT5GVegUQEzjXwhVUuOqZn29ebe.jpeg',
+    alt: 'Standards-compliant control panel design with indicator lights',
+  },
 ]
 
 export function HeroSlider() {
