@@ -164,7 +164,7 @@ export default function CareersPage() {
         </section>
 
         {/* For Every Type of Professional Section */}
-        <section className="py-12 md:py-16 px-4 bg-gray-50">
+        <section className="py-12 md:py-16 px-4" style={{ backgroundColor: 'rgb(245, 241, 235)' }}>
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-medium text-center mb-12 font-geist">Opportunities For Everyone</h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 font-geist">
@@ -204,7 +204,7 @@ export default function CareersPage() {
         </section>
 
         {/* Application Timeline Section */}
-        <section className="py-12 md:py-16 px-4" style={{ backgroundColor: '#d9dbdd' }}>
+        <section className="py-12 md:py-16 px-4" style={{ backgroundColor: 'rgb(245, 241, 235)' }}>
           <div className="max-w-7xl mx-auto">
             <h2 className="text-3xl md:text-4xl font-medium text-center mb-12 font-geist">Application Process</h2>
             <div className="max-w-3xl mx-auto">
