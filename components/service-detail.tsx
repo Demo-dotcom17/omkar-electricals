@@ -39,11 +39,11 @@ export function ServiceDetail({
           </div>
 
           {/* Mobile Image - Appears after description */}
-          <div className="relative rounded-xl overflow-hidden shadow-lg flex items-center justify-center bg-gray-100">
+          <div className="relative rounded-xl overflow-hidden shadow-lg flex items-center justify-center bg-gray-100" style={{ width: '100%', height: '320px' }}>
             <img
               src={image}
               alt={title}
-              className="w-full h-auto object-contain"
+              className="w-full h-full object-contain"
             />
           </div>
 
@@ -68,11 +68,11 @@ export function ServiceDetail({
         <div className={`hidden md:grid grid-cols-12 gap-8 md:gap-12 items-center ${imageFirst ? 'grid-flow-dense' : ''}`}>
           {/* Image */}
           <div className={`${imageFirst ? 'md:col-span-5' : 'md:col-start-8 md:col-span-5'} ${imageFirst ? 'order-1' : 'order-2'}`}>
-            <div className="relative rounded-xl overflow-hidden shadow-lg flex items-center justify-center bg-gray-100">
+            <div className="relative rounded-xl overflow-hidden shadow-lg flex items-center justify-center bg-gray-100" style={{ width: '100%', height: '400px' }}>
               <img
                 src={image}
                 alt={title}
-                className="w-full h-auto object-contain"
+                className="w-full h-full object-contain"
               />
             </div>
           </div>
