@@ -91,7 +91,8 @@ export function HeroSlider() {
 
   return (
     <section
-      className="relative h-screen w-full overflow-hidden bg-black"
+      className="relative h-screen w-full overflow-hidden"
+      style={{ backgroundColor: 'rgb(245, 241, 235)' }}
       onMouseEnter={() => setIsAutoplay(false)}
       onMouseLeave={() => setIsAutoplay(true)}
       onTouchStart={handleTouchStart}
