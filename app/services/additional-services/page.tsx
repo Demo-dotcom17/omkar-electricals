@@ -13,12 +13,12 @@ export default function AdditionalServices() {
       <Header />
       <main>
         {/* Hero Section */}
-        <section className="bg-background py-12 md:py-20 px-4">
+        <section className="py-12 md:py-20 px-4" style={{ backgroundColor: 'rgb(18, 79, 198)' }}>
           <div className="max-w-7xl mx-auto">
-            <h1 className="text-3xl md:text-4xl font-semibold text-foreground mb-6 font-geist">
+            <h1 className="text-3xl md:text-4xl font-semibold mb-6" style={{ color: 'rgb(255, 255, 255)', fontFamily: '"Manrope", sans-serif' }}>
               Additional Services
             </h1>
-            <p className="max-w-2xl font-geist" style={{ fontSize: '17px', color: '#2c3036', textAlign: 'justify' }}>
+            <p className="max-w-2xl font-geist" style={{ fontSize: '17px', color: 'rgb(255, 255, 255)', textAlign: 'justify' }}>
               Beyond our primary electrical services, Omkar Electricals offers specialized solutions including earthing and lightning protection systems, comprehensive fire protection services, structured data cabling, and professional LT cable laying. These specialized services ensure complete infrastructure safety and modern connectivity.
             </p>
           </div>
