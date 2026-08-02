@@ -14,43 +14,43 @@ interface Slide {
 const slides: Slide[] = [
   {
     id: 1,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-QhdeN47XUDJU7nRBpbftAm4LvRJYHz.png',
+    alt: 'Electrician with multimeter testing electrical panel',
+  },
+  {
+    id: 2,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-Z7vBFMXeNZ3PNZ0KX9bPKHSW2zSVo9.png',
+    alt: 'Electrician managing cables in control panel',
+  },
+  {
+    id: 3,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-aTMvI9gYoXKUsFf58x6mJJcH2WDV6I.png',
+    alt: 'Electricians working on power transmission pole with safety equipment',
+  },
+  {
+    id: 4,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-M14buiLEyN8RhR25W1MFZTl8leEN6x.png',
+    alt: 'Electrician inspecting circuit breaker panel',
+  },
+  {
+    id: 5,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-hJYovInCJt5P5pgOcOeQm6ZfYADOMk.png',
+    alt: 'Technician working on electrical control cabinet',
+  },
+  {
+    id: 6,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-w6OnnKq4FNPLF3XFgxOj3whppnQujv.png',
+    alt: 'Professional electrician in uniform with safety equipment',
+  },
+  {
+    id: 7,
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-VOTJmvrBe6dCu1NdpKKBUsNSDYwQDL.png',
     alt: 'Industrial electrical switchboard panel with control systems',
   },
   {
-    id: 2,
+    id: 8,
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-gKRc2EJPjERdhXh3VdgUzMjwcZhynB.png',
     alt: 'Professional data center cabling infrastructure',
-  },
-  {
-    id: 3,
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-vYITaGTA4gN6Zi2xTpoZTmFpbBd1GJ.png',
-    alt: 'Thermal imaging diagnosis of industrial control system',
-  },
-  {
-    id: 4,
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-xVm5LGcFXGKJOolINs5UECI0sH5eZn.png',
-    alt: 'Fire protection sprinkler system installation',
-  },
-  {
-    id: 5,
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-OIdQ9Vr9mY6QeV5YBsUr2gtig5DjzW.png',
-    alt: 'Residential electrical wiring and socket installation',
-  },
-  {
-    id: 6,
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Pole-Mounted-Transformer.webp-6zENAUR2qQizI99uBA3YTEucnYHugi.jpeg',
-    alt: 'Pole-mounted transformer electrical infrastructure',
-  },
-  {
-    id: 7,
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Standards-Compliant_Control_Panel_Design.jpg-OTciT5GVegUQEzjXwhVUuOqZn29ebe.jpeg',
-    alt: 'Standards-compliant control panel design with indicator lights',
-  },
-  {
-    id: 8,
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bAY4gloL3IQTMT35MPXVlwCAo4yTHu.png',
-    alt: 'Security camera installation and mounting system',
   },
 ]
 
