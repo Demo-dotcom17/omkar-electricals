@@ -84,7 +84,7 @@ export function SuccessPieChart() {
             outerRadius={120}
             paddingAngle={2}
             dataKey="value"
-            label={({ percentage }) => `${percentage}%`}
+            label={(entry: any) => `${Math.round((entry.value / data.reduce((sum, item) => sum + item.value, 0)) * 100)}%`}
             labelLine={true}
             animationBegin={0}
             animationDuration={1500}

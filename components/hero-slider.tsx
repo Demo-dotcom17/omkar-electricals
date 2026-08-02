@@ -83,11 +83,11 @@ export function HeroSlider() {
   }
 
   const handleTouchStart = (e: React.TouchEvent) => {
-    touchStartX.current = e.clientX || e.touches[0].clientX
+    touchStartX.current = e.touches[0]?.clientX || 0
   }
 
   const handleTouchEnd = (e: React.TouchEvent) => {
-    touchEndX.current = e.clientX || e.changedTouches[0].clientX
+    touchEndX.current = e.changedTouches[0]?.clientX || 0
     handleSwipe()
   }
 
