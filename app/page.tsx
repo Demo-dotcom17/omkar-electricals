@@ -116,6 +116,7 @@ export default function Home() {
             <div className="text-center">
               <Link
                 href="/contact"
+                prefetch={false}
                 className="inline-block text-accent-foreground px-8 py-3 rounded font-medium hover:opacity-90 transition font-inter"
                 style={{ backgroundColor: 'rgb(18, 79, 198)' }}
               >
