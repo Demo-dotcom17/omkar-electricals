@@ -47,6 +47,11 @@ const slides: Slide[] = [
     image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Standards-Compliant_Control_Panel_Design.jpg-OTciT5GVegUQEzjXwhVUuOqZn29ebe.jpeg',
     alt: 'Standards-compliant control panel design with indicator lights',
   },
+  {
+    id: 8,
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-bAY4gloL3IQTMT35MPXVlwCAo4yTHu.png',
+    alt: 'Security camera installation and mounting system',
+  },
 ]
 
 export function HeroSlider() {
