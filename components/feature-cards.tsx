@@ -1,5 +1,3 @@
-import { Check } from 'lucide-react'
-
 interface FeatureCardsProps {
   features: string[]
   title?: string
@@ -20,13 +18,6 @@ export function FeatureCards({ features, title = 'What We Provide' }: FeatureCar
             style={{ borderColor: '#D1D5DB' }}
           >
             <div className="flex items-start gap-4">
-              {/* Icon */}
-              <div className="flex-shrink-0 pt-0.5">
-                <div className="flex items-center justify-center w-6 h-6 rounded-full" style={{ backgroundColor: 'rgb(18, 79, 198)' }}>
-                  <Check size={16} className="text-white" strokeWidth={3} />
-                </div>
-              </div>
-              
               {/* Content */}
               <div className="flex-1">
                 <p className="font-medium text-foreground leading-relaxed" style={{ fontSize: '14px', fontFamily: '"Inter", sans-serif' }}>
