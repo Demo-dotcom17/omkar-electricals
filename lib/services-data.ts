@@ -85,7 +85,7 @@ export const servicesData: Service[] = [
       'Industrial safety certifications',
       'Preventive maintenance programs',
     ],
-    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-levoq9Jx1uGLsRFZ7HtDL5b0I6XeLG.png',
+    image: 'https://hebbkx1anhila5yf.public.blob.vercel-storage.com/image-m94US3LhILbHhbOCbO9DnK0gN6x5Ns.png',
     metaTitle: 'Industrial Electrical Work - Omkar Electricals',
     metaDescription: 'Heavy-duty industrial electrical systems, motor control, automation, and power backup solutions for manufacturing facilities.',
   },
